@@ -212,6 +212,48 @@ h2{
   color: var(--muted);
 }
 
+/* Skill / progress UI */
+.skill{ margin-top: 1rem; }
+.skill-row{
+  display:flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: .75rem;
+}
+.skill-name{ font-weight: 600; }
+.skill-level{ color: var(--muted); font-weight: 600; font-size: .9rem; }
+
+.bar{
+  margin-top: .45rem;
+  height: 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.03);
+  overflow:hidden;
+}
+.bar > span{
+  display:block;
+  height:100%;
+  background: linear-gradient(90deg, rgba(124,92,255,.9), rgba(34,211,238,.75));
+}
+.bar--thin{ height: 8px; }
+
+.badges{ display:flex; flex-wrap:wrap; gap: .4rem; }
+.badge{
+  font-size: .78rem;
+  padding: .18rem .5rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  background: rgba(255,255,255,.03);
+}
+
+.indicators{ margin-top: .75rem; display:grid; gap: .6rem; }
+.indicator-row{ display:flex; justify-content: space-between; gap: 1rem; font-weight: 600; }
+.indicator-row span:first-child{ color: var(--text); }
+
+.item-title{ display:flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap; }
+
 .timeline{ display:flex; flex-direction:column; gap: 1rem; }
 .item{
   border: 1px solid var(--line);
