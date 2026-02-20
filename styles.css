@@ -1,11 +1,11 @@
 :root{
-  --bg: #0b0f17;
-  --panel: #0f1624;
-  --text: #e8eefc;
-  --muted: #a8b3cf;
+  --bg: #031a13;
+  --panel: #042f22;
+  --text: #e8fbf0;
+  --muted: #a4cfb6;
   --line: rgba(255,255,255,.10);
-  --brand: #7c5cff;
-  --brand2: #22d3ee;
+  --brand: #2ecc71;
+  --brand2: #27ae60;
   --shadow: 0 10px 30px rgba(0,0,0,.35);
   --radius: 16px;
   --max: 1080px;
