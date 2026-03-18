@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: hsl(0 0% 7%);
+  --color-bg-secondary: hsl(0 0% 12%);
+  --color-bg-tertiary: hsl(0 0% 18%);
+  --color-foreground: hsl(0 0% 96%);
+  --color-text-secondary: hsl(0 0% 75%);
+  --color-text-tertiary: hsl(0 0% 55%);
+  --color-accent-bronze: hsl(30 35% 45%);
+  --color-accent-warm: hsl(40 40% 60%);
+  --color-border: hsl(0 0% 20%);
+  --color-ring: hsl(30 35% 45%);
+  --font-sans:
+    var(--font-montserrat), ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(0 0% 10%);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(30 35% 40%);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(30 35% 50%);
+  }
+
+  body {
+    background: linear-gradient(135deg, hsl(0 0% 7%) 0%, hsl(0 0% 10%) 100%);
+  }
+}
+
+@layer utilities {
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .reveal {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  .spotlight {
+    position: relative;
+  }
+
+  .spotlight::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(
+      circle,
+      rgba(232, 196, 150, 0.1) 0%,
+      rgba(232, 196, 150, 0.05) 20%,
+      transparent 80%
+    );
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .spotlight:hover::before {
+    opacity: 1;
+  }
+
+  .card-hover {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(0 0% 96%) 0%, hsl(40 40% 70%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-py {
+    padding: 6rem 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .section-py {
+      padding: 4rem 1rem;
+    }
+  }
+}
