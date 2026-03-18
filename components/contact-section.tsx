@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Mail, Phone, Linkedin, Github } from "lucide-react";
+import { Mail, Phone, Linkedin, Github, MessageCircle } from "lucide-react";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -106,6 +106,23 @@ export function ContactSection() {
                     <p className="text-sm text-text-tertiary">Phone</p>
                     <p className="text-foreground font-medium hover:text-accent-warm transition-colors">
                       +233 241 852 603
+                    </p>
+                  </div>
+                </a>
+
+                <a
+                  href="https://wa.me/233272676431"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 group"
+                >
+                  <div className="w-12 h-12 bg-accent-bronze/20 rounded-lg flex items-center justify-center group-hover:bg-accent-bronze/30 transition-colors">
+                    <MessageCircle className="w-6 h-6 text-accent-warm" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-text-tertiary">WhatsApp</p>
+                    <p className="text-foreground font-medium hover:text-accent-warm transition-colors">
+                      +233 27 267 6431
                     </p>
                   </div>
                 </a>
