@@ -14,10 +14,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Theophilus Paintsil | Senior Software Engineer & Technical Leader",
+  metadataBase: new URL("https://theoonline.netlify.app"),
+  // metadataBase: new URL("https://theophiluspaintsil.com"),
+  title: {
+    default:
+      "Theophilus Paintsil | Senior Software Engineer & Technical Leader",
+    template: "%s | Theophilus Paintsil",
+  },
   description:
     "Premium portfolio of Theophilus Paintsil, Senior Software Engineer and Head of Technical Delivery. Full-stack engineer, DevOps architect, and technical leader with 8+ years of experience.",
-  generator: "v0.app",
+  generator: "tp",
+  applicationName: "Theophilus Paintsil Portfolio",
+  referrer: "origin-when-cross-origin",
   keywords: [
     "Senior Software Engineer",
     "Technical Leader",
@@ -26,7 +34,17 @@ export const metadata: Metadata = {
     "React",
     "Node.js",
     "Cloud Architecture",
+    "Software Architecture",
+    "Technical Delivery",
   ],
+  authors: [{ name: "Theophilus Paintsil" }],
+  creator: "Theophilus Paintsil",
+  publisher: "Theophilus Paintsil",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   icons: {
     icon: [
       {
@@ -39,6 +57,32 @@ export const metadata: Metadata = {
       },
     ],
     apple: "/apple-icon",
+  },
+  openGraph: {
+    title: "Theophilus Paintsil | Senior Software Engineer & Technical Leader",
+    description:
+      "Premium portfolio of Theophilus Paintsil, Senior Software Engineer and Head of Technical Delivery.",
+    url: "https://theophiluspaintsil.com",
+    siteName: "Theophilus Paintsil",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Theophilus Paintsil | Senior Software Engineer",
+    description:
+      "Senior Software Engineer and Head of Technical Delivery with 8+ years of experience.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
