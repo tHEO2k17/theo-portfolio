@@ -48,19 +48,6 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  icons: {
-    icon: [
-      {
-        url: "/icon/light",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon/dark",
-        media: "(prefers-color-scheme: dark)",
-      },
-    ],
-    apple: "/apple-icon",
-  },
   openGraph: {
     title: "Theophilus Paintsil | Senior Software Engineer & Technical Lead",
     description:
