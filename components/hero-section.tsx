@@ -74,7 +74,7 @@ export function HeroSection() {
                 Let's Work Together
               </a>
               <a
-                href="https://drive.google.com/file/d/1d5vrqdQy6L6Fnl05mC9PszFJALcbYI3c/view?usp=sharing"
+                href="https://drive.google.com/file/d/1O5oBeM3LiXw0NWC1Jc0tB_trgmc6zYNv/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 border border-border text-text-secondary px-8 py-3 rounded-lg font-semibold hover:text-foreground hover:border-foreground transition-colors"
