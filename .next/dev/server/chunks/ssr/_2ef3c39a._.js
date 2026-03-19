@@ -176,6 +176,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-down.js [app-ssr] (ecmascript) <export default as ChevronDown>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-ssr] (ecmascript) <export default as ArrowRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-ssr] (ecmascript) <export default as MapPin>");
 "use client";
 ;
 ;
@@ -245,8 +246,8 @@ function HeroSection() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-xl md:text-2xl text-accent-warm font-medium mb-4",
-                                        children: "Senior Software Engineer | Frontend Heavy"
+                                        className: "text-xl md:text-2xl text-accent-warm font-medium mb-6",
+                                        children: "Senior Software Engineer & Technical Lead"
                                     }, void 0, false, {
                                         fileName: "[project]/components/hero-section.tsx",
                                         lineNumber: 40,
@@ -254,7 +255,7 @@ function HeroSection() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-lg text-text-secondary mb-8 leading-relaxed max-w-xl",
-                                        children: "I build reliable software systems, lead technical delivery, and turn complex ideas into scalable products."
+                                        children: "I architect scalable cloud-native systems, lead technical delivery, and build high-performance engineering teams. Transforming complex business needs into production-ready software."
                                     }, void 0, false, {
                                         fileName: "[project]/components/hero-section.tsx",
                                         lineNumber: 44,
@@ -262,10 +263,34 @@ function HeroSection() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-text-tertiary mb-10 leading-relaxed max-w-xl",
-                                        children: "Over 8 years of experience across full-stack engineering, DevOps, cloud infrastructure, and technical leadership — building products in fintech, cybersecurity, IoT, and modern web platforms."
-                                    }, void 0, false, {
+                                        children: [
+                                            "8+ years of experience across Fintech, IoT, and Cybersecurity.",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                fileName: "[project]/components/hero-section.tsx",
+                                                lineNumber: 53,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-foreground/80",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
+                                                        className: "w-4 h-4 inline-block text-accent-warm mr-1 mb-1"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/hero-section.tsx",
+                                                        lineNumber: 55,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    "Based in Ghana • Open to Relocation (EU / UK / Canada) • Remote-Ready"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/hero-section.tsx",
+                                                lineNumber: 54,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/components/hero-section.tsx",
-                                        lineNumber: 49,
+                                        lineNumber: 51,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -280,13 +305,13 @@ function HeroSection() {
                                                         className: "w-5 h-5"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/hero-section.tsx",
-                                                        lineNumber: 62,
+                                                        lineNumber: 68,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/hero-section.tsx",
-                                                lineNumber: 57,
+                                                lineNumber: 63,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -295,7 +320,7 @@ function HeroSection() {
                                                 children: "Let's Work Together"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/hero-section.tsx",
-                                                lineNumber: 64,
+                                                lineNumber: 70,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -306,13 +331,13 @@ function HeroSection() {
                                                 children: "Download CV"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/hero-section.tsx",
-                                                lineNumber: 70,
+                                                lineNumber: 76,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/hero-section.tsx",
-                                        lineNumber: 56,
+                                        lineNumber: 62,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -325,7 +350,7 @@ function HeroSection() {
                                                         children: "8+"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/hero-section.tsx",
-                                                        lineNumber: 83,
+                                                        lineNumber: 89,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -333,13 +358,13 @@ function HeroSection() {
                                                         children: "Years Experience"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/hero-section.tsx",
-                                                        lineNumber: 84,
+                                                        lineNumber: 90,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/hero-section.tsx",
-                                                lineNumber: 82,
+                                                lineNumber: 88,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -349,7 +374,7 @@ function HeroSection() {
                                                         children: "5+"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/hero-section.tsx",
-                                                        lineNumber: 87,
+                                                        lineNumber: 93,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -357,13 +382,13 @@ function HeroSection() {
                                                         children: "Industries"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/hero-section.tsx",
-                                                        lineNumber: 88,
+                                                        lineNumber: 94,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/hero-section.tsx",
-                                                lineNumber: 86,
+                                                lineNumber: 92,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -373,7 +398,7 @@ function HeroSection() {
                                                         children: "∞"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/hero-section.tsx",
-                                                        lineNumber: 91,
+                                                        lineNumber: 97,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -381,19 +406,19 @@ function HeroSection() {
                                                         children: "Passion"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/hero-section.tsx",
-                                                        lineNumber: 92,
+                                                        lineNumber: 98,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/hero-section.tsx",
-                                                lineNumber: 90,
+                                                lineNumber: 96,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/hero-section.tsx",
-                                        lineNumber: 81,
+                                        lineNumber: 87,
                                         columnNumber: 13
                                     }, this)
                                 ]
@@ -411,7 +436,7 @@ function HeroSection() {
                                             className: "absolute inset-0 bg-gradient-to-br from-accent-bronze/20 to-accent-warm/10 rounded-2xl blur-2xl"
                                         }, void 0, false, {
                                             fileName: "[project]/components/hero-section.tsx",
-                                            lineNumber: 102,
+                                            lineNumber: 108,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -422,25 +447,25 @@ function HeroSection() {
                                             priority: true
                                         }, void 0, false, {
                                             fileName: "[project]/components/hero-section.tsx",
-                                            lineNumber: 103,
+                                            lineNumber: 109,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "absolute inset-0 rounded-2xl bg-gradient-to-t from-background/20 to-transparent"
                                         }, void 0, false, {
                                             fileName: "[project]/components/hero-section.tsx",
-                                            lineNumber: 110,
+                                            lineNumber: 116,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/hero-section.tsx",
-                                    lineNumber: 101,
+                                    lineNumber: 107,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/hero-section.tsx",
-                                lineNumber: 98,
+                                lineNumber: 104,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -459,25 +484,25 @@ function HeroSection() {
                                     children: "Scroll to explore"
                                 }, void 0, false, {
                                     fileName: "[project]/components/hero-section.tsx",
-                                    lineNumber: 120,
+                                    lineNumber: 126,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
                                     className: "w-5 h-5 text-accent-warm"
                                 }, void 0, false, {
                                     fileName: "[project]/components/hero-section.tsx",
-                                    lineNumber: 121,
+                                    lineNumber: 127,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/hero-section.tsx",
-                            lineNumber: 119,
+                            lineNumber: 125,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/hero-section.tsx",
-                        lineNumber: 116,
+                        lineNumber: 122,
                         columnNumber: 9
                     }, this)
                 ]
@@ -502,7 +527,10 @@ __turbopack_context__.s([
     ()=>AboutSection
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
-'use client';
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-ssr] (ecmascript) <export default as ArrowRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check.js [app-ssr] (ecmascript) <export default as CheckCircle2>");
+"use client";
+;
 ;
 function AboutSection() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -516,7 +544,7 @@ function AboutSection() {
                     children: "About"
                 }, void 0, false, {
                     fileName: "[project]/components/about-section.tsx",
-                    lineNumber: 7,
+                    lineNumber: 12,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -527,32 +555,32 @@ function AboutSection() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-lg text-text-secondary leading-relaxed",
-                                    children: "I'm Theophilus Paintsil, a Senior Software Engineer and Head of Technical Delivery with a strong background in full-stack development, DevOps, system administration, and technical leadership. I enjoy building systems that are scalable, maintainable, and grounded in real business impact."
+                                    children: "I'm Theophilus Paintsil, a Senior Software Engineer and Technical Lead with over 8 years of experience taking products from idea to production. I specialize in designing scalable cloud-native architectures and leading engineering teams to ship products that serve tens of thousands of active users."
                                 }, void 0, false, {
                                     fileName: "[project]/components/about-section.tsx",
-                                    lineNumber: 12,
+                                    lineNumber: 19,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-lg text-text-secondary leading-relaxed",
-                                    children: "My work spans engineering execution, architecture, delivery management, cloud deployment, and mentoring teams through the full software lifecycle. I thrive in environments where technical excellence meets business strategy."
+                                    children: "Currently, I serve as the Head of Technical Delivery at Code Raccoon, where I own the technical roadmap and bridge the gap between business strategy and engineering execution. My background is deep and varied, spanning Fintech, IoT, and Cybersecurity."
                                 }, void 0, false, {
                                     fileName: "[project]/components/about-section.tsx",
-                                    lineNumber: 15,
+                                    lineNumber: 26,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-lg text-text-secondary leading-relaxed",
-                                    children: "Whether architecting microservices at scale, optimizing CI/CD pipelines, or mentoring the next generation of engineers, I bring discipline, clarity, and a systems-thinking approach to every challenge."
+                                    children: "I am actively expanding into AI-integrated systems and cybersecurity tooling. I am looking for Senior, Lead, or Architect-level roles with ambitious global teams where I can drive technical excellence and deliver real-world impact."
                                 }, void 0, false, {
                                     fileName: "[project]/components/about-section.tsx",
-                                    lineNumber: 18,
+                                    lineNumber: 32,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/about-section.tsx",
-                            lineNumber: 11,
+                            lineNumber: 18,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -566,26 +594,25 @@ function AboutSection() {
                                             children: "Core Principles"
                                         }, void 0, false, {
                                             fileName: "[project]/components/about-section.tsx",
-                                            lineNumber: 26,
+                                            lineNumber: 43,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                             className: "space-y-3",
                                             children: [
-                                                'Build with clarity',
-                                                'Architect for scale',
-                                                'Lead with ownership',
-                                                'Deliver with discipline',
-                                                'Keep systems clean and maintainable'
+                                                "Engineering ownership & accountability",
+                                                "Scalable, cloud-native architecture",
+                                                "Automated, reliable delivery pipelines",
+                                                "Clear technical communication",
+                                                "Security by design"
                                             ].map((principle)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                     className: "flex items-start gap-3",
                                                     children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-accent-warm font-bold mt-1",
-                                                            children: "▪"
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                            className: "w-5 h-5 text-accent-warm shrink-0 mt-0.5"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/about-section.tsx",
-                                                            lineNumber: 36,
+                                                            lineNumber: 55,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -593,24 +620,24 @@ function AboutSection() {
                                                             children: principle
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/about-section.tsx",
-                                                            lineNumber: 37,
+                                                            lineNumber: 56,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, principle, true, {
                                                     fileName: "[project]/components/about-section.tsx",
-                                                    lineNumber: 35,
+                                                    lineNumber: 54,
                                                     columnNumber: 19
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/components/about-section.tsx",
-                                            lineNumber: 27,
+                                            lineNumber: 46,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/about-section.tsx",
-                                    lineNumber: 25,
+                                    lineNumber: 42,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -621,80 +648,72 @@ function AboutSection() {
                                             children: "Current Focus"
                                         }, void 0, false, {
                                             fileName: "[project]/components/about-section.tsx",
-                                            lineNumber: 45,
+                                            lineNumber: 64,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                             className: "space-y-2 text-text-secondary text-sm",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: "→ Scalable web platforms"
-                                                }, void 0, false, {
+                                                "AI-Integrated Platform Development",
+                                                "Cybersecurity Tooling",
+                                                "Cloud-Native System Design",
+                                                "Engineering Leadership",
+                                                "LLM Tooling"
+                                            ].map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    className: "flex items-center gap-2",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                                                            className: "w-4 h-4 text-accent-warm shrink-0"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/about-section.tsx",
+                                                            lineNumber: 76,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            children: item
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/about-section.tsx",
+                                                            lineNumber: 77,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, item, true, {
                                                     fileName: "[project]/components/about-section.tsx",
-                                                    lineNumber: 47,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: "→ Technical leadership & mentoring"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/about-section.tsx",
-                                                    lineNumber: 48,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: "→ DevOps & cloud delivery"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/about-section.tsx",
-                                                    lineNumber: 49,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: "→ Product-minded engineering"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/about-section.tsx",
-                                                    lineNumber: 50,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: "→ Clean system design"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/about-section.tsx",
-                                                    lineNumber: 51,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
+                                                    lineNumber: 75,
+                                                    columnNumber: 19
+                                                }, this))
+                                        }, void 0, false, {
                                             fileName: "[project]/components/about-section.tsx",
-                                            lineNumber: 46,
+                                            lineNumber: 67,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/about-section.tsx",
-                                    lineNumber: 44,
+                                    lineNumber: 63,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/about-section.tsx",
-                            lineNumber: 24,
+                            lineNumber: 41,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/about-section.tsx",
-                    lineNumber: 9,
+                    lineNumber: 16,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/about-section.tsx",
-            lineNumber: 6,
+            lineNumber: 11,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/about-section.tsx",
-        lineNumber: 5,
+        lineNumber: 7,
         columnNumber: 5
     }, this);
 }
@@ -982,154 +1001,147 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$experience$2d$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/experience-card.tsx [app-ssr] (ecmascript)");
-'use client';
+"use client";
 ;
 ;
 const experiences = [
     {
-        title: 'Head of Technical Delivery',
-        company: 'Code Raccoon',
-        dates: 'July 2025 – Present',
-        role: 'Leadership & Strategy',
+        title: "Head of Technical Delivery",
+        company: "Code Raccoon",
+        dates: "July 2025 – Present",
+        role: "Accra, Ghana (Hybrid)",
         technologies: [
-            'Team Leadership',
-            'Architecture',
-            'Strategy',
-            'DevOps'
+            "Technical Delivery",
+            "System Architecture",
+            "CI/CD",
+            "Team Leadership"
         ],
         achievements: [
-            'Lead and mentor a team of developers, overseeing the entire software development lifecycle',
-            'Define technical strategy, roadmap, and architectural standards for system scalability',
-            'Manage project execution, coordinate with stakeholders, and ensure timely delivery',
-            'Drive continuous improvement in development processes and team capabilities'
+            "Lead technical delivery across the client and internal product portfolio (including Ambylon), owning architecture decisions and production deployment.",
+            "Establish engineering standards, CI/CD workflows, and deployment practices to raise the team's execution bar.",
+            "Hire, onboard, and mentor engineers, building a culture centered on ownership, clean code, and shipping reliable software.",
+            "Collaborate with product and design to integrate AI capabilities into the roadmap, ensuring the company stays ahead of industry trends."
         ]
     },
     {
-        title: 'Senior Cross-Platform Engineer (Consultant)',
-        company: 'Grundfos',
-        dates: 'February 2024 – December 2024',
-        role: 'Engineering & DevOps',
+        title: "Senior Cross-Platform Engineer (Consultant)",
+        company: "Grundfos",
+        dates: "February 2024 – December 2024",
+        role: "Remote (Denmark / Ghana)",
         technologies: [
-            'Azure DevOps',
-            'CI/CD',
-            'AngularJS',
-            'Go',
-            'Cloud'
+            "Azure DevOps",
+            "CI/CD",
+            "AngularJS",
+            "Go",
+            "Cloud"
         ],
         achievements: [
-            'Led cross-functional team developing Project Flow platform for ultrasonic water meters',
-            'Designed and implemented CI/CD pipelines for optimized software deployment using Azure DevOps',
-            'Engineered and maintained full-stack web applications with modern tech stack',
-            'Provided technical consultancy for software development and cloud integration'
+            'Architected and shipped "Project Flow", a platform for remotely managing and monitoring ultrasonic water meters across industrial sites.',
+            "Built the full CI/CD pipeline using Azure DevOps, Docker, and Kubernetes, cutting release cycle time by ~40% and eliminating environment inconsistencies.",
+            "Advised on cloud integration strategy and shaped infrastructure decisions for a product with a global enterprise customer base.",
+            "Collaborated daily with distributed teams across three time zones, ensuring delivery milestones were met on track."
         ]
     },
     {
-        title: 'Technical Lead (Contract)',
-        company: 'Juduh',
-        dates: 'December 2023 – December 2024',
-        role: 'Cybersecurity & Leadership',
+        title: "Technical Lead (Contract)",
+        company: "Juduh",
+        dates: "December 2023 – December 2024",
+        role: "Remote",
         technologies: [
-            'GitHub Actions',
-            'CI/CD',
-            'Security',
-            'Python'
+            "GitHub Actions",
+            "CI/CD",
+            "Security",
+            "Python"
         ],
         achievements: [
-            'Spearheaded development of Mirrored Defense, an advanced cybersecurity tool',
-            'Managed a team of developers ensuring adherence to coding best practices',
-            'Implemented automated CI/CD workflows using GitHub Actions for continuous security',
-            'Architected security-first approach to system design and deployment'
+            "Led the build of Mirrored Defense, a cybersecurity platform designed to detect and neutralize active threat vectors.",
+            "Managed a team of five engineers, introducing code review processes and automated QA to increase velocity without compromising stability.",
+            "Reduced manual deployment effort by over 60% by implementing automated GitHub Actions CI/CD workflows.",
+            "Designed a backend architecture capable of handling concurrent threat analysis at scale with zero downtime deployments."
         ]
     },
     {
-        title: 'Senior Frontend Developer',
-        company: 'tech11 GmbH',
-        dates: 'August 2023 – February 2024',
-        role: 'Frontend Engineering',
+        title: "Senior Frontend Developer",
+        company: "tech11 GmbH",
+        dates: "August 2023 – February 2024",
+        role: "Remote / Würzburg, Germany",
         technologies: [
-            'JavaScript Web Components',
-            'React',
-            'TypeScript',
-            'APIs'
+            "JavaScript Web Components",
+            "React",
+            "TypeScript",
+            "APIs"
         ],
         achievements: [
-            'Engineered scalable web portals utilizing JavaScript Web Components',
-            'Collaborated with international teams to integrate APIs and cloud services',
-            'Built reusable component libraries for enterprise applications',
-            'Optimized frontend performance across multiple platforms'
+            "Built modular web portals using native JavaScript Web Components, ensuring interface compatibility across multiple client frameworks.",
+            "Integrated third-party APIs and cloud services while collaborating with international teams in Germany, the US, and Eastern Europe.",
+            "Championed agile practices, including tighter sprint planning and structured peer reviews, resulting in a visible increase in throughput."
         ]
     },
     {
-        title: 'Software Developer',
-        company: 'Nsano Ghana Ltd',
-        dates: 'March 2020 – August 2023',
-        role: 'Full-Stack & Mobile',
+        title: "Software Developer",
+        company: "Nsano Ghana Ltd",
+        dates: "March 2020 – August 2023",
+        role: "Accra, Ghana",
         technologies: [
-            'Flutter',
-            'React',
-            'Node.js',
-            'PostgreSQL',
-            'Fintech'
+            "Flutter",
+            "React",
+            "Node.js",
+            "PWAs",
+            "Fintech"
         ],
         achievements: [
-            'Led development for fintech mobile applications in Flutter, enhancing UX and security',
-            'Developed and maintained progressive web applications (PWAs) and backend services',
-            'Improved mobile payment processing and data security protocols',
-            'Mentored junior developers on mobile development best practices'
+            "Led frontend and mobile development on fintech products serving 50,000+ active users across West Africa.",
+            "Built PWAs that cut load times by 35% on low-bandwidth connections, directly improving user retention in variable network markets.",
+            "Tightened mobile payment flows and data security protocols, resulting in zero critical security incidents over three years.",
+            "Mentored three junior developers and introduced coding standards and review processes that remain in use today."
         ]
     },
     {
-        title: 'Software Developer',
-        company: '8D Digital',
-        dates: 'October 2018 – February 2020',
-        role: 'Full-Stack Development',
+        title: "Software Developer",
+        company: "8D Digital",
+        dates: "October 2018 – February 2020",
+        role: "Accra, Ghana",
         technologies: [
-            'React',
-            'Node.js',
-            'MongoDB',
-            'Firebase'
+            "React",
+            "Node.js",
+            "MongoDB",
+            "Firebase"
         ],
         achievements: [
-            'Built mobile payment application for financial transactions',
-            'Developed merchant acquisition web platform for business onboarding',
-            'Designed backend APIs for payment processing and data management',
-            'Implemented security measures for financial data protection'
+            "Built a mobile payments app handling real-time financial transactions via local banking APIs and USSD gateways.",
+            "Developed a merchant acquisition platform that cut SME onboarding time by 50% by digitizing manual processes."
         ]
     },
     {
-        title: 'Frontend Developer',
-        company: 'Persol Systems Ltd',
-        dates: 'July 2017 – August 2018',
-        role: 'Web Development',
+        title: "Frontend Developer",
+        company: "Persol Systems Ltd",
+        dates: "July 2017 – August 2018",
+        role: "Accra, Ghana",
         technologies: [
-            'Angular',
-            'JavaScript',
-            'HTML/CSS',
-            'Cloud'
+            "Angular",
+            "JavaScript",
+            "HTML/CSS",
+            "Cloud"
         ],
         achievements: [
-            'Developed web portal for tracking oil distribution logistics',
-            'Enhanced HCM project by optimizing cloud-based solutions',
-            'Built responsive user interfaces for complex data visualization',
-            'Collaborated with backend teams for API integration'
+            "Built a web portal for real-time oil distribution tracking, providing previously unavailable visibility to operations teams.",
+            "Optimized cloud infrastructure for the company's HCM product, improving responsiveness and reducing running costs."
         ]
     },
     {
-        title: 'Systems Administrator (Apprentice)',
-        company: 'Eicons Microsystems',
-        dates: 'January 2016 – June 2017',
-        role: 'Infrastructure & Systems',
+        title: "Systems Administrator (Apprentice)",
+        company: "Eicons Microsystems",
+        dates: "January 2016 – June 2017",
+        role: "Accra, Ghana",
         technologies: [
-            'Linux',
-            'Windows Server',
-            'VPN',
-            'PBX Systems'
+            "Linux",
+            "Windows Server",
+            "VPN",
+            "PBX Systems"
         ],
         achievements: [
-            'Installed, configured, and managed PBX telephony systems and CCTV networks',
-            'Maintained Windows/Linux servers with uptime optimization',
-            'Developed custom web solutions for various clients',
-            'Provided technical support and system troubleshooting'
+            "Installed and configured PBX telephony systems and CCTV networks for commercial clients.",
+            "Built custom web solutions for clients, gaining foundational experience in end-to-end software delivery."
         ]
     }
 ];
@@ -1145,7 +1157,7 @@ function ExperienceSection() {
                     children: "Experience"
                 }, void 0, false, {
                     fileName: "[project]/components/experience-section.tsx",
-                    lineNumber: 116,
+                    lineNumber: 114,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1162,23 +1174,23 @@ function ExperienceSection() {
                             ...exp
                         }, idx, false, {
                             fileName: "[project]/components/experience-section.tsx",
-                            lineNumber: 123,
+                            lineNumber: 124,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/experience-section.tsx",
-                    lineNumber: 121,
+                    lineNumber: 122,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/experience-section.tsx",
-            lineNumber: 115,
+            lineNumber: 113,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/experience-section.tsx",
-        lineNumber: 114,
+        lineNumber: 112,
         columnNumber: 5
     }, this);
 }
@@ -1192,73 +1204,73 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
-'use client';
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/check.js [app-ssr] (ecmascript) <export default as Check>");
+"use client";
+;
 ;
 ;
 const skillCategories = [
     {
-        name: 'Frontend',
+        name: "Languages",
         skills: [
-            'ReactJS',
-            'Angular',
-            'JavaScript',
-            'TypeScript',
-            'HTML/CSS',
-            'Web Components'
+            "JavaScript",
+            "TypeScript",
+            "C#",
+            "Dart",
+            "Kotlin",
+            "Bash"
         ]
     },
     {
-        name: 'Backend',
+        name: "Frontend & Mobile",
         skills: [
-            'Node.js',
-            'NestJS',
-            'ASP.NET Core',
-            'Laravel',
-            'Go',
-            'Quarkus'
+            "React.js",
+            "Next.js",
+            "Angular",
+            "Flutter",
+            "Web Components",
+            "PWAs"
         ]
     },
     {
-        name: 'Mobile',
+        name: "Backend & APIs",
         skills: [
-            'Flutter',
-            'Dart',
-            'Android Native',
-            'Kotlin',
-            'React Native'
+            "Node.js",
+            "Nest.js",
+            "ASP.NET Core",
+            "GraphQL",
+            "RESTful APIs",
+            "Firebase"
         ]
     },
     {
-        name: 'Databases',
+        name: "Cloud & DevOps",
         skills: [
-            'PostgreSQL',
-            'MongoDB',
-            'MySQL',
-            'Firebase',
-            'MSSQL'
+            "Azure",
+            "Azure DevOps",
+            "Docker",
+            "Kubernetes",
+            "GitHub Actions",
+            "Helm",
+            "Netlify"
         ]
     },
     {
-        name: 'DevOps & Cloud',
+        name: "Architecture",
         skills: [
-            'AWS',
-            'Azure',
-            'GCP',
-            'Docker',
-            'Kubernetes',
-            'GitHub Actions',
-            'ArgoCD',
-            'Helm'
+            "Microservices",
+            "Cloud-Native",
+            "System Design",
+            "CI/CD Pipeline Design"
         ]
     },
     {
-        name: 'Infrastructure',
+        name: "Security & Network",
         skills: [
-            'Linux',
-            'Windows Server',
-            'VPN',
-            'Network Config',
-            'PBX Systems'
+            "Cybersecurity Tooling",
+            "VPNs",
+            "Network Config",
+            "PBX Systems"
         ]
     }
 ];
@@ -1275,7 +1287,7 @@ function SkillsSection() {
                     children: "Skills & Expertise"
                 }, void 0, false, {
                     fileName: "[project]/components/skills-section.tsx",
-                    lineNumber: 38,
+                    lineNumber: 66,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1283,23 +1295,23 @@ function SkillsSection() {
                     children: "A comprehensive toolkit built over 8+ years of engineering excellence"
                 }, void 0, false, {
                     fileName: "[project]/components/skills-section.tsx",
-                    lineNumber: 39,
+                    lineNumber: 69,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex flex-wrap gap-2 md:gap-3 justify-center mb-12",
                     children: skillCategories.map((category, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: ()=>setActiveCategory(idx),
-                            className: `px-4 md:px-6 py-2 md:py-3 rounded-lg font-medium transition-all ${activeCategory === idx ? 'bg-accent-warm text-background' : 'bg-bg-secondary/50 border border-border/30 text-text-secondary hover:text-foreground'}`,
+                            className: `px-4 md:px-6 py-2 md:py-3 rounded-lg font-medium transition-all ${activeCategory === idx ? "bg-accent-warm text-background" : "bg-bg-secondary/50 border border-border/30 text-text-secondary hover:text-foreground"}`,
                             children: category.name
                         }, idx, false, {
                             fileName: "[project]/components/skills-section.tsx",
-                            lineNumber: 46,
+                            lineNumber: 76,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/skills-section.tsx",
-                    lineNumber: 44,
+                    lineNumber: 74,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1311,47 +1323,47 @@ function SkillsSection() {
                                 children: skill
                             }, void 0, false, {
                                 fileName: "[project]/components/skills-section.tsx",
-                                lineNumber: 67,
+                                lineNumber: 97,
                                 columnNumber: 15
                             }, this)
                         }, skill, false, {
                             fileName: "[project]/components/skills-section.tsx",
-                            lineNumber: 63,
+                            lineNumber: 93,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/skills-section.tsx",
-                    lineNumber: 61,
+                    lineNumber: 91,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "mt-16 grid md:grid-cols-3 gap-6",
                     children: [
                         {
-                            label: 'Leadership',
+                            label: "Leadership",
                             items: [
-                                'Team Mentoring',
-                                'Technical Strategy',
-                                'Project Management',
-                                'Agile/Scrum'
+                                "Team Mentoring",
+                                "Technical Strategy",
+                                "Project Management",
+                                "Agile/Scrum"
                             ]
                         },
                         {
-                            label: 'Soft Skills',
+                            label: "Soft Skills",
                             items: [
-                                'Technical Writing',
-                                'Public Speaking',
-                                'System Design',
-                                'Problem Solving'
+                                "Technical Writing",
+                                "Public Speaking",
+                                "System Design",
+                                "Problem Solving"
                             ]
                         },
                         {
-                            label: 'Specializations',
+                            label: "Specializations",
                             items: [
-                                'Fintech',
-                                'Cybersecurity',
-                                'IoT',
-                                'Cloud Architecture'
+                                "Fintech",
+                                "Cybersecurity",
+                                "IoT",
+                                "Cloud Architecture"
                             ]
                         }
                     ].map((group, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1362,7 +1374,7 @@ function SkillsSection() {
                                     children: group.label
                                 }, void 0, false, {
                                     fileName: "[project]/components/skills-section.tsx",
-                                    lineNumber: 92,
+                                    lineNumber: 134,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1370,46 +1382,45 @@ function SkillsSection() {
                                     children: group.items.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                             className: "flex items-center gap-2 text-text-secondary",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-accent-warm",
-                                                    children: "▪"
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
+                                                    className: "w-4 h-4 text-accent-warm shrink-0"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/skills-section.tsx",
-                                                    lineNumber: 96,
+                                                    lineNumber: 143,
                                                     columnNumber: 21
                                                 }, this),
                                                 item
                                             ]
                                         }, item, true, {
                                             fileName: "[project]/components/skills-section.tsx",
-                                            lineNumber: 95,
+                                            lineNumber: 139,
                                             columnNumber: 19
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/skills-section.tsx",
-                                    lineNumber: 93,
+                                    lineNumber: 137,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, idx, true, {
                             fileName: "[project]/components/skills-section.tsx",
-                            lineNumber: 88,
+                            lineNumber: 130,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/skills-section.tsx",
-                    lineNumber: 73,
+                    lineNumber: 105,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/skills-section.tsx",
-            lineNumber: 37,
+            lineNumber: 65,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/skills-section.tsx",
-        lineNumber: 36,
+        lineNumber: 64,
         columnNumber: 5
     }, this);
 }
@@ -1423,7 +1434,9 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
-'use client';
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-ssr] (ecmascript) <export default as ArrowRight>");
+"use client";
+;
 ;
 ;
 function ProjectCard({ title, role, description, technologies, tags, link }) {
@@ -1441,7 +1454,7 @@ function ProjectCard({ title, role, description, technologies, tags, link }) {
                         children: title
                     }, void 0, false, {
                         fileName: "[project]/components/project-card.tsx",
-                        lineNumber: 31,
+                        lineNumber: 32,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1449,7 +1462,7 @@ function ProjectCard({ title, role, description, technologies, tags, link }) {
                         children: role
                     }, void 0, false, {
                         fileName: "[project]/components/project-card.tsx",
-                        lineNumber: 32,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1457,13 +1470,13 @@ function ProjectCard({ title, role, description, technologies, tags, link }) {
                         children: description
                     }, void 0, false, {
                         fileName: "[project]/components/project-card.tsx",
-                        lineNumber: 33,
+                        lineNumber: 34,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/project-card.tsx",
-                lineNumber: 30,
+                lineNumber: 31,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1474,7 +1487,7 @@ function ProjectCard({ title, role, description, technologies, tags, link }) {
                         children: "Technologies"
                     }, void 0, false, {
                         fileName: "[project]/components/project-card.tsx",
-                        lineNumber: 37,
+                        lineNumber: 38,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1484,18 +1497,18 @@ function ProjectCard({ title, role, description, technologies, tags, link }) {
                                 children: tech
                             }, tech, false, {
                                 fileName: "[project]/components/project-card.tsx",
-                                lineNumber: 40,
+                                lineNumber: 43,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/project-card.tsx",
-                        lineNumber: 38,
+                        lineNumber: 41,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/project-card.tsx",
-                lineNumber: 36,
+                lineNumber: 37,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1505,12 +1518,12 @@ function ProjectCard({ title, role, description, technologies, tags, link }) {
                         children: tag
                     }, tag, false, {
                         fileName: "[project]/components/project-card.tsx",
-                        lineNumber: 49,
+                        lineNumber: 55,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/project-card.tsx",
-                lineNumber: 47,
+                lineNumber: 53,
                 columnNumber: 7
             }, this),
             link && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1520,24 +1533,23 @@ function ProjectCard({ title, role, description, technologies, tags, link }) {
                 className: "inline-flex items-center text-accent-warm hover:text-accent-bronze transition-colors text-sm font-medium group",
                 children: [
                     "View Project",
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: `ml-2 transition-transform ${isHovered ? 'translate-x-1' : ''}`,
-                        children: "→"
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                        className: `ml-2 w-4 h-4 transition-transform ${isHovered ? "translate-x-1" : ""}`
                     }, void 0, false, {
                         fileName: "[project]/components/project-card.tsx",
-                        lineNumber: 63,
+                        lineNumber: 72,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/project-card.tsx",
-                lineNumber: 56,
+                lineNumber: 65,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/project-card.tsx",
-        lineNumber: 25,
+        lineNumber: 26,
         columnNumber: 5
     }, this);
 }
@@ -1552,123 +1564,157 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$project$2d$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/project-card.tsx [app-ssr] (ecmascript)");
-'use client';
+"use client";
 ;
 ;
 ;
 const allProjects = [
     {
-        title: 'Stride',
-        role: 'Full-stack Developer & DevOps',
+        title: "Tekora",
+        role: "Personal Project (In Progress)",
         category: [
-            'Web',
-            'Fintech'
+            "AI",
+            "Tooling",
+            "Productivity"
         ],
-        description: 'Enterprise financial platform for investment management and portfolio tracking. Built scalable backend infrastructure with modern DevOps practices.',
+        description: "A platform I am building independently to transition into AI tooling. Focused on enhancing developer productivity and intelligent workflow automation.",
         technologies: [
-            'React',
-            'Node.js',
-            'PostgreSQL',
-            'Docker',
-            'AWS'
+            "AI",
+            "LLMs",
+            "Workflow Automation"
         ],
         tags: [
-            'Web',
-            'Fintech'
+            "AI",
+            "Productivity"
         ],
-        link: '#'
+        link: "#"
     },
     {
-        title: 'Pamo',
-        role: 'Mobile Developer',
+        title: "Borga Money",
+        role: "Lead Mobile Developer",
         category: [
-            'Mobile',
-            'Fintech'
+            "Mobile",
+            "Fintech"
         ],
-        description: 'Mobile-first fintech application for seamless money transfers and payments. Achieved 100k+ downloads with focus on user experience and security.',
+        description: "Cross-border remittance platform helping Ghanaians in the diaspora send money home. Built with Flutter, integrating real-time FX rates, KYC flows, and multi-currency wallets.",
         technologies: [
-            'Flutter',
-            'Firebase',
-            'Dart',
-            'REST APIs'
+            "Flutter",
+            "Real-time FX",
+            "KYC",
+            "Multi-currency"
         ],
         tags: [
-            'Mobile',
-            'Fintech'
+            "Mobile",
+            "Fintech"
         ],
-        link: '#'
+        link: "https://borga.money/home"
     },
     {
-        title: 'Borga Money',
-        role: 'Mobile Developer',
+        title: "Stride",
+        role: "Full-stack Developer & DevOps",
         category: [
-            'Mobile',
-            'Fintech'
+            "Web",
+            "Mobile",
+            "Social",
+            "Fitness",
+            "DevOps"
         ],
-        description: 'Cryptocurrency and digital wallet application. Implemented secure wallet management and real-time price tracking functionality.',
+        description: "Social fitness app connecting people for shared workouts. Built the full stack including Node.js API, React frontend, and PostgreSQL data layer with automated CI/CD and cloud deployment.",
         technologies: [
-            'Flutter',
-            'Bloc',
-            'APIs',
-            'Security'
+            "React",
+            "Node.js",
+            "Laravel",
+            "Flutter",
+            "PostgreSQL",
+            "MongoDB",
+            "Socket.io",
+            "Docker",
+            "AWS"
         ],
         tags: [
-            'Mobile',
-            'Fintech'
+            "Web",
+            "Mobile",
+            "Social",
+            "Fitness",
+            "DevOps"
         ],
-        link: '#'
+        link: "https://connectwithstride.com/"
     },
     {
-        title: 'MoveGH',
-        role: 'Mobile Developer',
+        title: "Pamo",
+        role: "Mobile Developer",
         category: [
-            'Mobile'
+            "Mobile",
+            "E-commerce",
+            "Marketplace"
         ],
-        description: 'On-demand logistics and delivery platform. Built robust mobile application with real-time tracking and payment integration.',
+        description: "Reverse marketplace shopping app where buyers post requests and sellers make offers. Flips the traditional e-commerce model to give buyers control. Built with Flutter and Firebase.",
         technologies: [
-            'Flutter',
-            'Google Maps',
-            'Firebase',
-            'Payment Integration'
+            "Flutter",
+            "Firebase",
+            "Marketplace Logic"
         ],
         tags: [
-            'Mobile'
+            "Mobile",
+            "E-commerce",
+            "Marketplace",
+            "Social"
         ],
-        link: '#'
+        link: "https://pamo.app/home"
     },
     {
-        title: 'Banbo',
-        role: 'Mobile & Web Developer',
+        title: "MoveGH",
+        role: "Mobile Developer",
         category: [
-            'Web',
-            'Mobile',
-            'Fintech'
+            "Mobile",
+            "Fintech"
         ],
-        description: 'Full-stack banking platform combining mobile app and web dashboard. Managed user authentication, payments, and comprehensive admin controls.',
+        description: "Comprehensive fintech app for cross-border money transfers, bill payments, and escrow services. Integrated with local payment rails and USSD gateways.",
         technologies: [
-            'React',
-            'Flutter',
-            'Node.js',
-            'PostgreSQL'
+            "Flutter",
+            "USSD Gateways",
+            "Firebase",
+            "Payments"
         ],
         tags: [
-            'Web',
-            'Mobile',
-            'Fintech'
+            "Mobile",
+            "Fintech"
         ],
-        link: '#'
+        link: "https://movegh.com/"
+    },
+    {
+        title: "Banbo",
+        role: "Mobile & Web Developer",
+        category: [
+            "Web",
+            "Mobile",
+            "Fintech"
+        ],
+        description: "Insurtech platform for comparing and purchasing vehicle and personal insurance. Delivered both the mobile app and web platform from zero to launch.",
+        technologies: [
+            "React",
+            "Flutter",
+            "Node.js",
+            "PostgreSQL"
+        ],
+        tags: [
+            "Web",
+            "Mobile",
+            "Fintech"
+        ],
+        link: "https://banbo.insure/home"
     }
 ];
 const filterOptions = [
-    'All',
-    'Web',
-    'Mobile',
-    'Fintech',
-    'DevOps'
+    "All",
+    "Web",
+    "Mobile",
+    "Fintech",
+    "DevOps"
 ];
 function ProjectsSection() {
-    const [activeFilter, setActiveFilter] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('All');
-    const filteredProjects = activeFilter === 'All' ? allProjects : allProjects.filter((p)=>p.category.includes(activeFilter));
+    const [activeFilter, setActiveFilter] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("All");
+    const filteredProjects = activeFilter === "All" ? allProjects : allProjects.filter((p)=>p.category.includes(activeFilter));
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "projects",
         className: "section-py bg-background",
@@ -1680,7 +1726,7 @@ function ProjectsSection() {
                     children: "Featured Projects"
                 }, void 0, false, {
                     fileName: "[project]/components/projects-section.tsx",
-                    lineNumber: 66,
+                    lineNumber: 92,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1688,23 +1734,23 @@ function ProjectsSection() {
                     children: "Showcasing impactful work across web, mobile, and infrastructure domains"
                 }, void 0, false, {
                     fileName: "[project]/components/projects-section.tsx",
-                    lineNumber: 67,
+                    lineNumber: 95,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex flex-wrap gap-2 justify-center mb-12",
                     children: filterOptions.map((filter)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: ()=>setActiveFilter(filter),
-                            className: `px-4 md:px-6 py-2 rounded-lg font-medium transition-all ${activeFilter === filter ? 'bg-accent-warm text-background' : 'bg-bg-secondary/50 border border-border/30 text-text-secondary hover:text-foreground'}`,
+                            className: `px-4 md:px-6 py-2 rounded-lg font-medium transition-all ${activeFilter === filter ? "bg-accent-warm text-background" : "bg-bg-secondary/50 border border-border/30 text-text-secondary hover:text-foreground"}`,
                             children: filter
                         }, filter, false, {
                             fileName: "[project]/components/projects-section.tsx",
-                            lineNumber: 74,
+                            lineNumber: 103,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/projects-section.tsx",
-                    lineNumber: 72,
+                    lineNumber: 101,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1713,23 +1759,23 @@ function ProjectsSection() {
                             ...project
                         }, idx, false, {
                             fileName: "[project]/components/projects-section.tsx",
-                            lineNumber: 91,
+                            lineNumber: 120,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/projects-section.tsx",
-                    lineNumber: 89,
+                    lineNumber: 118,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/projects-section.tsx",
-            lineNumber: 65,
+            lineNumber: 91,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/projects-section.tsx",
-        lineNumber: 64,
+        lineNumber: 90,
         columnNumber: 5
     }, this);
 }
@@ -1742,7 +1788,9 @@ __turbopack_context__.s([
     ()=>LeadershipSection
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
-'use client';
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check.js [app-ssr] (ecmascript) <export default as CheckCircle2>");
+"use client";
+;
 ;
 function LeadershipSection() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1756,7 +1804,7 @@ function LeadershipSection() {
                     children: "Leadership & Impact"
                 }, void 0, false, {
                     fileName: "[project]/components/leadership-section.tsx",
-                    lineNumber: 7,
+                    lineNumber: 9,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1770,25 +1818,25 @@ function LeadershipSection() {
                                     children: "Key Strengths"
                                 }, void 0, false, {
                                     fileName: "[project]/components/leadership-section.tsx",
-                                    lineNumber: 12,
+                                    lineNumber: 16,
                                     columnNumber: 13
                                 }, this),
                                 [
                                     {
-                                        title: 'Strategic Leadership',
-                                        description: 'Define technical roadmaps and architectural standards that align with business goals'
+                                        title: "Strategic Leadership",
+                                        description: "Define technical roadmaps and architectural standards that align with business goals"
                                     },
                                     {
-                                        title: 'Team Development',
-                                        description: 'Mentor and grow engineers while fostering a culture of ownership and excellence'
+                                        title: "Team Development",
+                                        description: "Mentor and grow engineers while fostering a culture of ownership and excellence"
                                     },
                                     {
-                                        title: 'Delivery Excellence',
-                                        description: 'Balance engineering quality with execution speed to ship reliable products'
+                                        title: "Delivery Excellence",
+                                        description: "Balance engineering quality with execution speed to ship reliable products"
                                     },
                                     {
-                                        title: 'Systems Thinking',
-                                        description: 'Architect scalable solutions considering security, performance, and maintainability'
+                                        title: "Systems Thinking",
+                                        description: "Architect scalable solutions considering security, performance, and maintainability"
                                     }
                                 ].map((item, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "bg-bg-secondary/50 border border-border/30 rounded-lg p-6 hover:border-accent-bronze/50 transition-colors",
@@ -1798,7 +1846,7 @@ function LeadershipSection() {
                                                 children: item.title
                                             }, void 0, false, {
                                                 fileName: "[project]/components/leadership-section.tsx",
-                                                lineNumber: 32,
+                                                lineNumber: 45,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1806,19 +1854,19 @@ function LeadershipSection() {
                                                 children: item.description
                                             }, void 0, false, {
                                                 fileName: "[project]/components/leadership-section.tsx",
-                                                lineNumber: 33,
+                                                lineNumber: 48,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, idx, true, {
                                         fileName: "[project]/components/leadership-section.tsx",
-                                        lineNumber: 31,
+                                        lineNumber: 41,
                                         columnNumber: 15
                                     }, this))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/leadership-section.tsx",
-                            lineNumber: 11,
+                            lineNumber: 15,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1832,7 +1880,7 @@ function LeadershipSection() {
                                             children: "Leadership Philosophy"
                                         }, void 0, false, {
                                             fileName: "[project]/components/leadership-section.tsx",
-                                            lineNumber: 41,
+                                            lineNumber: 56,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1840,7 +1888,7 @@ function LeadershipSection() {
                                             children: "At Code Raccoon, I lead with the belief that great software comes from great teams. My approach centers on clarity, ownership, and continuous improvement."
                                         }, void 0, false, {
                                             fileName: "[project]/components/leadership-section.tsx",
-                                            lineNumber: 42,
+                                            lineNumber: 59,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1848,7 +1896,7 @@ function LeadershipSection() {
                                             children: "I've learned that technical excellence isn't just about writing good code—it's about building systems that scale, teams that grow, and delivering consistent value to users and businesses."
                                         }, void 0, false, {
                                             fileName: "[project]/components/leadership-section.tsx",
-                                            lineNumber: 45,
+                                            lineNumber: 64,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1856,13 +1904,13 @@ function LeadershipSection() {
                                             children: "My role is to remove blockers, provide clear direction, and empower engineers to do their best work. When teams are aligned and equipped, nothing is out of reach."
                                         }, void 0, false, {
                                             fileName: "[project]/components/leadership-section.tsx",
-                                            lineNumber: 48,
+                                            lineNumber: 69,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/leadership-section.tsx",
-                                    lineNumber: 40,
+                                    lineNumber: 55,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1873,23 +1921,22 @@ function LeadershipSection() {
                                             children: "Notable Achievements"
                                         }, void 0, false, {
                                             fileName: "[project]/components/leadership-section.tsx",
-                                            lineNumber: 55,
+                                            lineNumber: 78,
                                             columnNumber: 15
                                         }, this),
                                         [
-                                            'Promoted to Head of Technical Delivery within 6 months',
-                                            'Led architectural redesign reducing deployment time by 70%',
-                                            'Mentored 5+ engineers from junior to mid-level roles',
-                                            'Implemented CI/CD practices improving team velocity'
+                                            "Promoted to Head of Technical Delivery within 6 months",
+                                            "Led architectural redesign reducing deployment time by 70%",
+                                            "Mentored 5+ engineers from junior to mid-level roles",
+                                            "Implemented CI/CD practices improving team velocity"
                                         ].map((achievement, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex items-start gap-3",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-accent-warm font-bold mt-1",
-                                                        children: "✓"
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                        className: "w-5 h-5 text-accent-warm shrink-0 mt-0.5"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/leadership-section.tsx",
-                                                        lineNumber: 63,
+                                                        lineNumber: 88,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1897,42 +1944,42 @@ function LeadershipSection() {
                                                         children: achievement
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/leadership-section.tsx",
-                                                        lineNumber: 64,
+                                                        lineNumber: 89,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, idx, true, {
                                                 fileName: "[project]/components/leadership-section.tsx",
-                                                lineNumber: 62,
+                                                lineNumber: 87,
                                                 columnNumber: 17
                                             }, this))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/leadership-section.tsx",
-                                    lineNumber: 54,
+                                    lineNumber: 77,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/leadership-section.tsx",
-                            lineNumber: 39,
+                            lineNumber: 54,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/leadership-section.tsx",
-                    lineNumber: 9,
+                    lineNumber: 13,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/leadership-section.tsx",
-            lineNumber: 6,
+            lineNumber: 8,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/leadership-section.tsx",
-        lineNumber: 5,
+        lineNumber: 7,
         columnNumber: 5
     }, this);
 }
@@ -1945,7 +1992,7 @@ __turbopack_context__.s([
     ()=>EducationSection
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
-'use client';
+"use client";
 ;
 function EducationSection() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1972,19 +2019,19 @@ function EducationSection() {
                                     children: "Education"
                                 }, void 0, false, {
                                     fileName: "[project]/components/education-section.tsx",
-                                    lineNumber: 12,
+                                    lineNumber: 14,
                                     columnNumber: 13
                                 }, this),
                                 [
                                     {
-                                        degree: 'BSc. Information Technology',
-                                        institution: 'Ghana Technology University College',
-                                        location: 'Takoradi, Ghana'
+                                        degree: "BSc Information Technology",
+                                        institution: "Ghana Technology University College",
+                                        location: "2016"
                                     },
                                     {
-                                        degree: 'Systems Engineering',
-                                        institution: 'Intercom Programming & Marketing Co.',
-                                        location: 'Takoradi, Ghana'
+                                        degree: "Professional Diploma in Systems Engineering",
+                                        institution: "Intercom Programming & Marketing Co.",
+                                        location: "2014"
                                     }
                                 ].map((edu, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "bg-bg-secondary/50 border border-border/30 rounded-lg p-6 hover:border-accent-bronze/50 transition-colors",
@@ -1994,7 +2041,7 @@ function EducationSection() {
                                                 children: edu.degree
                                             }, void 0, false, {
                                                 fileName: "[project]/components/education-section.tsx",
-                                                lineNumber: 26,
+                                                lineNumber: 33,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2002,7 +2049,7 @@ function EducationSection() {
                                                 children: edu.institution
                                             }, void 0, false, {
                                                 fileName: "[project]/components/education-section.tsx",
-                                                lineNumber: 27,
+                                                lineNumber: 34,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2010,19 +2057,19 @@ function EducationSection() {
                                                 children: edu.location
                                             }, void 0, false, {
                                                 fileName: "[project]/components/education-section.tsx",
-                                                lineNumber: 28,
+                                                lineNumber: 37,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, idx, true, {
                                         fileName: "[project]/components/education-section.tsx",
-                                        lineNumber: 25,
+                                        lineNumber: 29,
                                         columnNumber: 15
                                     }, this))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/education-section.tsx",
-                            lineNumber: 11,
+                            lineNumber: 13,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2033,25 +2080,21 @@ function EducationSection() {
                                     children: "Awards & Recognition"
                                 }, void 0, false, {
                                     fileName: "[project]/components/education-section.tsx",
-                                    lineNumber: 35,
+                                    lineNumber: 44,
                                     columnNumber: 13
                                 }, this),
                                 [
                                     {
-                                        title: 'Head of State Award - Silver',
-                                        year: '2010'
+                                        title: "Ghana Head of State Award",
+                                        year: "Silver (2010), Bronze (2006)"
                                     },
                                     {
-                                        title: 'Head of State Award - Bronze',
-                                        year: '2006'
+                                        title: "GTS Certificate of Excellence",
+                                        year: "Outstanding Performance"
                                     },
                                     {
-                                        title: 'GTS Certificate Award',
-                                        year: 'Awarded'
-                                    },
-                                    {
-                                        title: 'Early Promotion to Leadership',
-                                        year: '2025'
+                                        title: "Cloud & AI Certifications",
+                                        year: "Pursuing Azure, AWS & AI/ML"
                                     }
                                 ].map((award, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "bg-gradient-to-r from-accent-bronze/10 to-accent-warm/5 border border-accent-bronze/20 rounded-lg p-6",
@@ -2061,7 +2104,7 @@ function EducationSection() {
                                                 children: award.title
                                             }, void 0, false, {
                                                 fileName: "[project]/components/education-section.tsx",
-                                                lineNumber: 55,
+                                                lineNumber: 65,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2069,25 +2112,25 @@ function EducationSection() {
                                                 children: award.year
                                             }, void 0, false, {
                                                 fileName: "[project]/components/education-section.tsx",
-                                                lineNumber: 56,
+                                                lineNumber: 68,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, idx, true, {
                                         fileName: "[project]/components/education-section.tsx",
-                                        lineNumber: 54,
+                                        lineNumber: 61,
                                         columnNumber: 15
                                     }, this))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/education-section.tsx",
-                            lineNumber: 34,
+                            lineNumber: 43,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/education-section.tsx",
-                    lineNumber: 9,
+                    lineNumber: 11,
                     columnNumber: 9
                 }, this)
             ]
@@ -2114,7 +2157,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/mail.js [app-ssr] (ecmascript) <export default as Mail>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/phone.js [app-ssr] (ecmascript) <export default as Phone>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$linkedin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Linkedin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/linkedin.js [app-ssr] (ecmascript) <export default as Linkedin>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$github$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Github$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/github.js [app-ssr] (ecmascript) <export default as Github>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$circle$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/message-circle.js [app-ssr] (ecmascript) <export default as MessageCircle>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v3$2f$types$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/zod/v3/types.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$hookform$2f$resolvers$2f$zod$2f$dist$2f$zod$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@hookform/resolvers/zod/dist/zod.mjs [app-ssr] (ecmascript)");
@@ -2358,14 +2401,14 @@ function ContactSection() {
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                    href: "https://linkedin.com/in/theopaintsil",
+                                                    href: "https://github.com/tHEO2k17",
                                                     target: "_blank",
                                                     rel: "noopener noreferrer",
                                                     className: "flex items-center gap-3 group",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "w-12 h-12 bg-accent-bronze/20 rounded-lg flex items-center justify-center group-hover:bg-accent-bronze/30 transition-colors",
-                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$linkedin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Linkedin$3e$__["Linkedin"], {
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$github$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Github$3e$__["Github"], {
                                                                 className: "w-6 h-6 text-accent-warm"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/contact-section.tsx",
@@ -2381,7 +2424,7 @@ function ContactSection() {
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                     className: "text-sm text-text-tertiary",
-                                                                    children: "LinkedIn"
+                                                                    children: "GitHub"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/contact-section.tsx",
                                                                     lineNumber: 140,
@@ -2389,7 +2432,7 @@ function ContactSection() {
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                     className: "text-foreground font-medium hover:text-accent-warm transition-colors",
-                                                                    children: "linkedin.com/in/theopaintsil"
+                                                                    children: "github.com/tHEO2k17"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/contact-section.tsx",
                                                                     lineNumber: 141,

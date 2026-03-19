@@ -1,132 +1,130 @@
-'use client'
+"use client";
 
-import { ExperienceCard } from './experience-card'
+import { ExperienceCard } from "./experience-card";
 
 const experiences = [
   {
-    title: 'Head of Technical Delivery',
-    company: 'Code Raccoon',
-    dates: 'July 2025 – Present',
-    role: 'Leadership & Strategy',
-    technologies: ['Team Leadership', 'Architecture', 'Strategy', 'DevOps'],
+    title: "Head of Technical Delivery",
+    company: "Code Raccoon",
+    dates: "July 2025 – Present",
+    role: "Accra, Ghana (Hybrid)",
+    technologies: [
+      "Technical Delivery",
+      "System Architecture",
+      "CI/CD",
+      "Team Leadership",
+    ],
     achievements: [
-      'Lead and mentor a team of developers, overseeing the entire software development lifecycle',
-      'Define technical strategy, roadmap, and architectural standards for system scalability',
-      'Manage project execution, coordinate with stakeholders, and ensure timely delivery',
-      'Drive continuous improvement in development processes and team capabilities',
+      "Lead technical delivery across the client and internal product portfolio (including Ambylon), owning architecture decisions and production deployment.",
+      "Establish engineering standards, CI/CD workflows, and deployment practices to raise the team's execution bar.",
+      "Hire, onboard, and mentor engineers, building a culture centered on ownership, clean code, and shipping reliable software.",
+      "Collaborate with product and design to integrate AI capabilities into the roadmap, ensuring the company stays ahead of industry trends.",
     ],
   },
   {
-    title: 'Senior Cross-Platform Engineer (Consultant)',
-    company: 'Grundfos',
-    dates: 'February 2024 – December 2024',
-    role: 'Engineering & DevOps',
-    technologies: ['Azure DevOps', 'CI/CD', 'AngularJS', 'Go', 'Cloud'],
+    title: "Senior Cross-Platform Engineer (Consultant)",
+    company: "Grundfos",
+    dates: "February 2024 – December 2024",
+    role: "Remote (Denmark / Ghana)",
+    technologies: ["Azure DevOps", "CI/CD", "AngularJS", "Go", "Cloud"],
     achievements: [
-      'Led cross-functional team developing Project Flow platform for ultrasonic water meters',
-      'Designed and implemented CI/CD pipelines for optimized software deployment using Azure DevOps',
-      'Engineered and maintained full-stack web applications with modern tech stack',
-      'Provided technical consultancy for software development and cloud integration',
+      'Architected and shipped "Project Flow", a platform for remotely managing and monitoring ultrasonic water meters across industrial sites.',
+      "Built the full CI/CD pipeline using Azure DevOps, Docker, and Kubernetes, cutting release cycle time by ~40% and eliminating environment inconsistencies.",
+      "Advised on cloud integration strategy and shaped infrastructure decisions for a product with a global enterprise customer base.",
+      "Collaborated daily with distributed teams across three time zones, ensuring delivery milestones were met on track.",
     ],
   },
   {
-    title: 'Technical Lead (Contract)',
-    company: 'Juduh',
-    dates: 'December 2023 – December 2024',
-    role: 'Cybersecurity & Leadership',
-    technologies: ['GitHub Actions', 'CI/CD', 'Security', 'Python'],
+    title: "Technical Lead (Contract)",
+    company: "Juduh",
+    dates: "December 2023 – December 2024",
+    role: "Remote",
+    technologies: ["GitHub Actions", "CI/CD", "Security", "Python"],
     achievements: [
-      'Spearheaded development of Mirrored Defense, an advanced cybersecurity tool',
-      'Managed a team of developers ensuring adherence to coding best practices',
-      'Implemented automated CI/CD workflows using GitHub Actions for continuous security',
-      'Architected security-first approach to system design and deployment',
+      "Led the build of Mirrored Defense, a cybersecurity platform designed to detect and neutralize active threat vectors.",
+      "Managed a team of five engineers, introducing code review processes and automated QA to increase velocity without compromising stability.",
+      "Reduced manual deployment effort by over 60% by implementing automated GitHub Actions CI/CD workflows.",
+      "Designed a backend architecture capable of handling concurrent threat analysis at scale with zero downtime deployments.",
     ],
   },
   {
-    title: 'Senior Frontend Developer',
-    company: 'tech11 GmbH',
-    dates: 'August 2023 – February 2024',
-    role: 'Frontend Engineering',
-    technologies: ['JavaScript Web Components', 'React', 'TypeScript', 'APIs'],
+    title: "Senior Frontend Developer",
+    company: "tech11 GmbH",
+    dates: "August 2023 – February 2024",
+    role: "Remote / Würzburg, Germany",
+    technologies: ["JavaScript Web Components", "React", "TypeScript", "APIs"],
     achievements: [
-      'Engineered scalable web portals utilizing JavaScript Web Components',
-      'Collaborated with international teams to integrate APIs and cloud services',
-      'Built reusable component libraries for enterprise applications',
-      'Optimized frontend performance across multiple platforms',
+      "Built modular web portals using native JavaScript Web Components, ensuring interface compatibility across multiple client frameworks.",
+      "Integrated third-party APIs and cloud services while collaborating with international teams in Germany, the US, and Eastern Europe.",
+      "Championed agile practices, including tighter sprint planning and structured peer reviews, resulting in a visible increase in throughput.",
     ],
   },
   {
-    title: 'Software Developer',
-    company: 'Nsano Ghana Ltd',
-    dates: 'March 2020 – August 2023',
-    role: 'Full-Stack & Mobile',
-    technologies: ['Flutter', 'React', 'Node.js', 'PostgreSQL', 'Fintech'],
+    title: "Software Developer",
+    company: "Nsano Ghana Ltd",
+    dates: "March 2020 – August 2023",
+    role: "Accra, Ghana",
+    technologies: ["Flutter", "React", "Node.js", "PWAs", "Fintech"],
     achievements: [
-      'Led development for fintech mobile applications in Flutter, enhancing UX and security',
-      'Developed and maintained progressive web applications (PWAs) and backend services',
-      'Improved mobile payment processing and data security protocols',
-      'Mentored junior developers on mobile development best practices',
+      "Led frontend and mobile development on fintech products serving 50,000+ active users across West Africa.",
+      "Built PWAs that cut load times by 35% on low-bandwidth connections, directly improving user retention in variable network markets.",
+      "Tightened mobile payment flows and data security protocols, resulting in zero critical security incidents over three years.",
+      "Mentored three junior developers and introduced coding standards and review processes that remain in use today.",
     ],
   },
   {
-    title: 'Software Developer',
-    company: '8D Digital',
-    dates: 'October 2018 – February 2020',
-    role: 'Full-Stack Development',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Firebase'],
+    title: "Software Developer",
+    company: "8D Digital",
+    dates: "October 2018 – February 2020",
+    role: "Accra, Ghana",
+    technologies: ["React", "Node.js", "MongoDB", "Firebase"],
     achievements: [
-      'Built mobile payment application for financial transactions',
-      'Developed merchant acquisition web platform for business onboarding',
-      'Designed backend APIs for payment processing and data management',
-      'Implemented security measures for financial data protection',
+      "Built a mobile payments app handling real-time financial transactions via local banking APIs and USSD gateways.",
+      "Developed a merchant acquisition platform that cut SME onboarding time by 50% by digitizing manual processes.",
     ],
   },
   {
-    title: 'Frontend Developer',
-    company: 'Persol Systems Ltd',
-    dates: 'July 2017 – August 2018',
-    role: 'Web Development',
-    technologies: ['Angular', 'JavaScript', 'HTML/CSS', 'Cloud'],
+    title: "Frontend Developer",
+    company: "Persol Systems Ltd",
+    dates: "July 2017 – August 2018",
+    role: "Accra, Ghana",
+    technologies: ["Angular", "JavaScript", "HTML/CSS", "Cloud"],
     achievements: [
-      'Developed web portal for tracking oil distribution logistics',
-      'Enhanced HCM project by optimizing cloud-based solutions',
-      'Built responsive user interfaces for complex data visualization',
-      'Collaborated with backend teams for API integration',
+      "Built a web portal for real-time oil distribution tracking, providing previously unavailable visibility to operations teams.",
+      "Optimized cloud infrastructure for the company's HCM product, improving responsiveness and reducing running costs.",
     ],
   },
   {
-    title: 'Systems Administrator (Apprentice)',
-    company: 'Eicons Microsystems',
-    dates: 'January 2016 – June 2017',
-    role: 'Infrastructure & Systems',
-    technologies: ['Linux', 'Windows Server', 'VPN', 'PBX Systems'],
+    title: "Systems Administrator (Apprentice)",
+    company: "Eicons Microsystems",
+    dates: "January 2016 – June 2017",
+    role: "Accra, Ghana",
+    technologies: ["Linux", "Windows Server", "VPN", "PBX Systems"],
     achievements: [
-      'Installed, configured, and managed PBX telephony systems and CCTV networks',
-      'Maintained Windows/Linux servers with uptime optimization',
-      'Developed custom web solutions for various clients',
-      'Provided technical support and system troubleshooting',
+      "Installed and configured PBX telephony systems and CCTV networks for commercial clients.",
+      "Built custom web solutions for clients, gaining foundational experience in end-to-end software delivery.",
     ],
   },
-]
+];
 
 export function ExperienceSection() {
   return (
     <section id="experience" className="section-py bg-background">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">Experience</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
+          Experience
+        </h2>
         <p className="text-text-secondary text-center mb-16 max-w-2xl mx-auto">
-          A journey through full-stack engineering, technical leadership, and system design across diverse industries
+          A journey through full-stack engineering, technical leadership, and
+          system design across diverse industries
         </p>
 
         <div className="space-y-6">
           {experiences.map((exp, idx) => (
-            <ExperienceCard
-              key={idx}
-              {...exp}
-            />
+            <ExperienceCard key={idx} {...exp} />
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -81,23 +81,27 @@ const metadata = {
     metadataBase: new URL("https://theoonline.netlify.app"),
     // metadataBase: new URL("https://theophiluspaintsil.com"),
     title: {
-        default: "Theophilus Paintsil | Senior Software Engineer & Technical Leader",
+        default: "Theophilus Paintsil | Senior Software Engineer & Technical Lead",
         template: "%s | Theophilus Paintsil"
     },
-    description: "Premium portfolio of Theophilus Paintsil, Senior Software Engineer and Head of Technical Delivery. Full-stack engineer, DevOps architect, and technical leader with 8+ years of experience.",
+    description: "Portfolio of Theophilus Paintsil, a Senior Software Engineer and Technical Lead. Specializing in Cloud-Native Architecture, DevOps, and Full-Stack Engineering (React, Node.js, .NET). Open to global remote & relocation.",
     generator: "tp",
     applicationName: "Theophilus Paintsil Portfolio",
     referrer: "origin-when-cross-origin",
     keywords: [
         "Senior Software Engineer",
         "Technical Leader",
+        "Head of Technical Delivery",
+        "Software Architect",
         "DevOps",
         "Full-Stack Developer",
         "React",
         "Node.js",
         "Cloud Architecture",
         "Software Architecture",
-        "Technical Delivery"
+        "Technical Delivery",
+        "AI Engineer",
+        "Cybersecurity"
     ],
     authors: [
         {
@@ -125,17 +129,17 @@ const metadata = {
         apple: "/apple-icon"
     },
     openGraph: {
-        title: "Theophilus Paintsil | Senior Software Engineer & Technical Leader",
-        description: "Premium portfolio of Theophilus Paintsil, Senior Software Engineer and Head of Technical Delivery.",
-        url: "https://theophiluspaintsil.com",
+        title: "Theophilus Paintsil | Senior Software Engineer & Technical Lead",
+        description: "Senior Software Engineer and Technical Lead specializing in scalable cloud architectures and engineering leadership.",
+        url: "https://theoonline.netlify.app",
         siteName: "Theophilus Paintsil",
         locale: "en_US",
         type: "website"
     },
     twitter: {
         card: "summary_large_image",
-        title: "Theophilus Paintsil | Senior Software Engineer",
-        description: "Senior Software Engineer and Head of Technical Delivery with 8+ years of experience."
+        title: "Theophilus Paintsil | Senior Software Engineer & Technical Lead",
+        description: "Building scalable cloud-native systems and leading engineering delivery."
     },
     robots: {
         index: true,
@@ -166,23 +170,23 @@ function RootLayout({ children }) {
                 children,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$vercel$2f$analytics$2f$dist$2f$next$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Analytics"], {}, void 0, false, {
                     fileName: "[project]/app/layout.tsx",
-                    lineNumber: 106,
+                    lineNumber: 109,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Toaster"], {}, void 0, false, {
                     fileName: "[project]/app/layout.tsx",
-                    lineNumber: 107,
+                    lineNumber: 110,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/layout.tsx",
-            lineNumber: 104,
+            lineNumber: 107,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 103,
+        lineNumber: 106,
         columnNumber: 5
     }, this);
 }

@@ -1,14 +1,15 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
+import { useState } from "react";
+import { ArrowRight } from "lucide-react";
 
 interface ProjectCardProps {
-  title: string
-  role: string
-  description: string
-  technologies: string[]
-  tags: string[]
-  link?: string
+  title: string;
+  role: string;
+  description: string;
+  technologies: string[];
+  tags: string[];
+  link?: string;
 }
 
 export function ProjectCard({
@@ -19,7 +20,7 @@ export function ProjectCard({
   tags,
   link,
 }: ProjectCardProps) {
-  const [isHovered, setIsHovered] = useState(false)
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div
@@ -34,10 +35,15 @@ export function ProjectCard({
       </div>
 
       <div className="mb-4">
-        <p className="text-text-tertiary text-xs uppercase tracking-widest mb-2">Technologies</p>
+        <p className="text-text-tertiary text-xs uppercase tracking-widest mb-2">
+          Technologies
+        </p>
         <div className="flex flex-wrap gap-2">
           {technologies.map((tech) => (
-            <span key={tech} className="px-2 py-1 bg-accent-bronze/20 text-accent-warm text-xs rounded font-medium">
+            <span
+              key={tech}
+              className="px-2 py-1 bg-accent-bronze/20 text-accent-warm text-xs rounded font-medium"
+            >
               {tech}
             </span>
           ))}
@@ -46,7 +52,10 @@ export function ProjectCard({
 
       <div className="flex flex-wrap gap-2 mb-4">
         {tags.map((tag) => (
-          <span key={tag} className="px-2 py-1 border border-border/30 text-text-tertiary text-xs rounded">
+          <span
+            key={tag}
+            className="px-2 py-1 border border-border/30 text-text-tertiary text-xs rounded"
+          >
             {tag}
           </span>
         ))}
@@ -60,9 +69,11 @@ export function ProjectCard({
           className="inline-flex items-center text-accent-warm hover:text-accent-bronze transition-colors text-sm font-medium group"
         >
           View Project
-          <span className={`ml-2 transition-transform ${isHovered ? 'translate-x-1' : ''}`}>→</span>
+          <ArrowRight
+            className={`ml-2 w-4 h-4 transition-transform ${isHovered ? "translate-x-1" : ""}`}
+          />
         </a>
       )}
     </div>
-  )
+  );
 }
