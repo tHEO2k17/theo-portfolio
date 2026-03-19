@@ -128,18 +128,18 @@ export function ContactSection() {
                 </a>
 
                 <a
-                  href="https://linkedin.com/in/theopaintsil"
+                  href="https://github.com/tHEO2k17"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 group"
                 >
                   <div className="w-12 h-12 bg-accent-bronze/20 rounded-lg flex items-center justify-center group-hover:bg-accent-bronze/30 transition-colors">
-                    <Linkedin className="w-6 h-6 text-accent-warm" />
+                    <Github className="w-6 h-6 text-accent-warm" />
                   </div>
                   <div>
-                    <p className="text-sm text-text-tertiary">LinkedIn</p>
+                    <p className="text-sm text-text-tertiary">GitHub</p>
                     <p className="text-foreground font-medium hover:text-accent-warm transition-colors">
-                      linkedin.com/in/theopaintsil
+                      github.com/tHEO2k17
                     </p>
                   </div>
                 </a>

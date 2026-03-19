@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { ChevronDown, ArrowRight } from "lucide-react";
+import { ChevronDown, ArrowRight, MapPin } from "lucide-react";
 
 export function HeroSection() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -37,19 +37,25 @@ export function HeroSection() {
               <span className="text-gradient">Paintsil</span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-accent-warm font-medium mb-4">
-              Senior Software Engineer | Frontend Heavy
+            <p className="text-xl md:text-2xl text-accent-warm font-medium mb-6">
+              Senior Software Engineer & Technical Lead
             </p>
 
             <p className="text-lg text-text-secondary mb-8 leading-relaxed max-w-xl">
-              I build reliable software systems, lead technical delivery, and
-              turn complex ideas into scalable products.
+              I architect scalable cloud-native systems, lead technical
+              delivery, and build high-performance engineering teams.
+              Transforming complex business needs into production-ready
+              software.
             </p>
 
             <p className="text-text-tertiary mb-10 leading-relaxed max-w-xl">
-              Over 8 years of experience across full-stack engineering, DevOps,
-              cloud infrastructure, and technical leadership — building products
-              in fintech, cybersecurity, IoT, and modern web platforms.
+              8+ years of experience across Fintech, IoT, and Cybersecurity.
+              <br />
+              <span className="text-foreground/80">
+                <MapPin className="w-4 h-4 inline-block text-accent-warm mr-1 mb-1" />
+                Based in Ghana • Open to Relocation (EU / UK / Canada) •
+                Remote-Ready
+              </span>
             </p>
 
             {/* CTA Buttons */}

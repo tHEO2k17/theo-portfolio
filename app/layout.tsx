@@ -17,18 +17,19 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://theoonline.netlify.app"),
   // metadataBase: new URL("https://theophiluspaintsil.com"),
   title: {
-    default:
-      "Theophilus Paintsil | Senior Software Engineer & Technical Leader",
+    default: "Theophilus Paintsil | Senior Software Engineer & Technical Lead",
     template: "%s | Theophilus Paintsil",
   },
   description:
-    "Premium portfolio of Theophilus Paintsil, Senior Software Engineer and Head of Technical Delivery. Full-stack engineer, DevOps architect, and technical leader with 8+ years of experience.",
+    "Portfolio of Theophilus Paintsil, a Senior Software Engineer and Technical Lead. Specializing in Cloud-Native Architecture, DevOps, and Full-Stack Engineering (React, Node.js, .NET). Open to global remote & relocation.",
   generator: "tp",
   applicationName: "Theophilus Paintsil Portfolio",
   referrer: "origin-when-cross-origin",
   keywords: [
     "Senior Software Engineer",
     "Technical Leader",
+    "Head of Technical Delivery",
+    "Software Architect",
     "DevOps",
     "Full-Stack Developer",
     "React",
@@ -36,6 +37,8 @@ export const metadata: Metadata = {
     "Cloud Architecture",
     "Software Architecture",
     "Technical Delivery",
+    "AI Engineer",
+    "Cybersecurity",
   ],
   authors: [{ name: "Theophilus Paintsil" }],
   creator: "Theophilus Paintsil",
@@ -59,19 +62,19 @@ export const metadata: Metadata = {
     apple: "/apple-icon",
   },
   openGraph: {
-    title: "Theophilus Paintsil | Senior Software Engineer & Technical Leader",
+    title: "Theophilus Paintsil | Senior Software Engineer & Technical Lead",
     description:
-      "Premium portfolio of Theophilus Paintsil, Senior Software Engineer and Head of Technical Delivery.",
-    url: "https://theophiluspaintsil.com",
+      "Senior Software Engineer and Technical Lead specializing in scalable cloud architectures and engineering leadership.",
+    url: "https://theoonline.netlify.app",
     siteName: "Theophilus Paintsil",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Theophilus Paintsil | Senior Software Engineer",
+    title: "Theophilus Paintsil | Senior Software Engineer & Technical Lead",
     description:
-      "Senior Software Engineer and Head of Technical Delivery with 8+ years of experience.",
+      "Building scalable cloud-native systems and leading engineering delivery.",
   },
   robots: {
     index: true,

@@ -578,6 +578,10 @@
     visibility: hidden;
   }
 
+  .visible {
+    visibility: visible;
+  }
+
   .sr-only {
     clip-path: inset(50%);
     white-space: nowrap;
@@ -802,6 +806,10 @@
     margin-top: calc(var(--spacing) * -4);
   }
 
+  .mt-0\.5 {
+    margin-top: calc(var(--spacing) * .5);
+  }
+
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
   }
@@ -824,6 +832,10 @@
 
   .mt-auto {
     margin-top: auto;
+  }
+
+  .mr-1 {
+    margin-right: calc(var(--spacing) * 1);
   }
 
   .mb-1 {
@@ -2407,6 +2419,16 @@
   @supports (color: color-mix(in lab, red, red)) {
     .text-foreground\/50 {
       color: color-mix(in oklab, var(--color-foreground) 50%, transparent);
+    }
+  }
+
+  .text-foreground\/80 {
+    color: #f5f5f5cc;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .text-foreground\/80 {
+      color: color-mix(in oklab, var(--color-foreground) 80%, transparent);
     }
   }
 

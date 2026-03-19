@@ -1,71 +1,100 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { ProjectCard } from './project-card'
+import { useState } from "react";
+import { ProjectCard } from "./project-card";
 
 const allProjects = [
   {
-    title: 'Stride',
-    role: 'Full-stack Developer & DevOps',
-    category: ['Web', 'Fintech'],
-    description: 'Enterprise financial platform for investment management and portfolio tracking. Built scalable backend infrastructure with modern DevOps practices.',
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'Docker', 'AWS'],
-    tags: ['Web', 'Fintech'],
-    link: '#',
+    title: "Tekora",
+    role: "Personal Project (In Progress)",
+    category: ["AI", "Tooling", "Productivity"],
+    description:
+      "A platform I am building independently to transition into AI tooling. Focused on enhancing developer productivity and intelligent workflow automation.",
+    technologies: ["AI", "LLMs", "Workflow Automation"],
+    tags: ["AI", "Productivity"],
+    link: "#",
   },
   {
-    title: 'Pamo',
-    role: 'Mobile Developer',
-    category: ['Mobile', 'Fintech'],
-    description: 'Mobile-first fintech application for seamless money transfers and payments. Achieved 100k+ downloads with focus on user experience and security.',
-    technologies: ['Flutter', 'Firebase', 'Dart', 'REST APIs'],
-    tags: ['Mobile', 'Fintech'],
-    link: '#',
+    title: "Borga Money",
+    role: "Lead Mobile Developer",
+    category: ["Mobile", "Fintech"],
+    description:
+      "Cross-border remittance platform helping Ghanaians in the diaspora send money home. Built with Flutter, integrating real-time FX rates, KYC flows, and multi-currency wallets.",
+    technologies: ["Flutter", "Real-time FX", "KYC", "Multi-currency"],
+    tags: ["Mobile", "Fintech"],
+    link: "https://borga.money/home",
   },
   {
-    title: 'Borga Money',
-    role: 'Mobile Developer',
-    category: ['Mobile', 'Fintech'],
-    description: 'Cryptocurrency and digital wallet application. Implemented secure wallet management and real-time price tracking functionality.',
-    technologies: ['Flutter', 'Bloc', 'APIs', 'Security'],
-    tags: ['Mobile', 'Fintech'],
-    link: '#',
+    title: "Stride",
+    role: "Full-stack Developer & DevOps",
+    category: ["Web", "Mobile", "Social", "Fitness", "DevOps"],
+    description:
+      "Social fitness app connecting people for shared workouts. Built the full stack including Node.js API, React frontend, and PostgreSQL data layer with automated CI/CD and cloud deployment.",
+    technologies: [
+      "React",
+      "Node.js",
+      "Laravel",
+      "Flutter",
+      "PostgreSQL",
+      "MongoDB",
+      "Socket.io",
+      "Docker",
+      "AWS",
+    ],
+    tags: ["Web", "Mobile", "Social", "Fitness", "DevOps"],
+    link: "https://connectwithstride.com/",
   },
   {
-    title: 'MoveGH',
-    role: 'Mobile Developer',
-    category: ['Mobile'],
-    description: 'On-demand logistics and delivery platform. Built robust mobile application with real-time tracking and payment integration.',
-    technologies: ['Flutter', 'Google Maps', 'Firebase', 'Payment Integration'],
-    tags: ['Mobile'],
-    link: '#',
+    title: "Pamo",
+    role: "Mobile Developer",
+    category: ["Mobile", "E-commerce", "Marketplace"],
+    description:
+      "Reverse marketplace shopping app where buyers post requests and sellers make offers. Flips the traditional e-commerce model to give buyers control. Built with Flutter and Firebase.",
+    technologies: ["Flutter", "Firebase", "Marketplace Logic"],
+    tags: ["Mobile", "E-commerce", "Marketplace", "Social"],
+    link: "https://pamo.app/home",
   },
   {
-    title: 'Banbo',
-    role: 'Mobile & Web Developer',
-    category: ['Web', 'Mobile', 'Fintech'],
-    description: 'Full-stack banking platform combining mobile app and web dashboard. Managed user authentication, payments, and comprehensive admin controls.',
-    technologies: ['React', 'Flutter', 'Node.js', 'PostgreSQL'],
-    tags: ['Web', 'Mobile', 'Fintech'],
-    link: '#',
+    title: "MoveGH",
+    role: "Mobile Developer",
+    category: ["Mobile", "Fintech"],
+    description:
+      "Comprehensive fintech app for cross-border money transfers, bill payments, and escrow services. Integrated with local payment rails and USSD gateways.",
+    technologies: ["Flutter", "USSD Gateways", "Firebase", "Payments"],
+    tags: ["Mobile", "Fintech"],
+    link: "https://movegh.com/",
   },
-]
+  {
+    title: "Banbo",
+    role: "Mobile & Web Developer",
+    category: ["Web", "Mobile", "Fintech"],
+    description:
+      "Insurtech platform for comparing and purchasing vehicle and personal insurance. Delivered both the mobile app and web platform from zero to launch.",
+    technologies: ["React", "Flutter", "Node.js", "PostgreSQL"],
+    tags: ["Web", "Mobile", "Fintech"],
+    link: "https://banbo.insure/home",
+  },
+];
 
-const filterOptions = ['All', 'Web', 'Mobile', 'Fintech', 'DevOps']
+const filterOptions = ["All", "Web", "Mobile", "Fintech", "DevOps"];
 
 export function ProjectsSection() {
-  const [activeFilter, setActiveFilter] = useState('All')
+  const [activeFilter, setActiveFilter] = useState("All");
 
-  const filteredProjects = activeFilter === 'All'
-    ? allProjects
-    : allProjects.filter((p) => p.category.includes(activeFilter))
+  const filteredProjects =
+    activeFilter === "All"
+      ? allProjects
+      : allProjects.filter((p) => p.category.includes(activeFilter));
 
   return (
     <section id="projects" className="section-py bg-background">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">Featured Projects</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
+          Featured Projects
+        </h2>
         <p className="text-text-secondary text-center mb-12 max-w-2xl mx-auto">
-          Showcasing impactful work across web, mobile, and infrastructure domains
+          Showcasing impactful work across web, mobile, and infrastructure
+          domains
         </p>
 
         {/* Filters */}
@@ -76,8 +105,8 @@ export function ProjectsSection() {
               onClick={() => setActiveFilter(filter)}
               className={`px-4 md:px-6 py-2 rounded-lg font-medium transition-all ${
                 activeFilter === filter
-                  ? 'bg-accent-warm text-background'
-                  : 'bg-bg-secondary/50 border border-border/30 text-text-secondary hover:text-foreground'
+                  ? "bg-accent-warm text-background"
+                  : "bg-bg-secondary/50 border border-border/30 text-text-secondary hover:text-foreground"
               }`}
             >
               {filter}
@@ -93,5 +122,5 @@ export function ProjectsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
