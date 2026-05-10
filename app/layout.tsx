@@ -13,75 +13,60 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
 });
 
+// Update this to your final custom domain
+const siteUrl = "https://theopaintsil.online";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://theoonline.netlify.app"),
-  // metadataBase: new URL("https://theophiluspaintsil.com"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Theophilus Paintsil | Senior Software Engineer & Technical Lead",
     template: "%s | Theophilus Paintsil",
   },
   description:
-    "Portfolio of Theophilus Paintsil, a Senior Software Engineer and Technical Lead. Specializing in Cloud-Native Architecture, DevOps, and Full-Stack Engineering (React, Node.js, .NET). Open to global remote & relocation.",
-  generator: "tp",
-  applicationName: "Theophilus Paintsil Portfolio",
-  referrer: "origin-when-cross-origin",
+    "Senior Software Engineer and Technical Lead specializing in Cloud-Native Architecture, Fintech, and IoT. Lead Developer of the Stride Platform.",
   keywords: [
+    "Theophilus Paintsil",
+    "Technical Lead Ghana",
     "Senior Software Engineer",
-    "Technical Leader",
-    "Head of Technical Delivery",
-    "Software Architect",
-    "DevOps",
-    "Full-Stack Developer",
-    "React",
-    "Node.js",
-    "Cloud Architecture",
-    "Software Architecture",
-    "Technical Delivery",
-    "AI Engineer",
-    "Cybersecurity",
+    "Cloud-Native Architect",
+    "Fintech Developer",
+    "IoT Engineering",
+    "Stride Platform",
+    "Technical Delivery Manager",
   ],
   authors: [{ name: "Theophilus Paintsil" }],
   creator: "Theophilus Paintsil",
-  publisher: "Theophilus Paintsil",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
   openGraph: {
     title: "Theophilus Paintsil | Senior Software Engineer & Technical Lead",
-    description:
-      "Senior Software Engineer and Technical Lead specializing in scalable cloud architectures and engineering leadership.",
-    url: "https://theoonline.netlify.app",
-    siteName: "Theophilus Paintsil",
+    description: "Architecting scalable cloud-native systems and leading technical delivery.",
+    url: siteUrl,
+    siteName: "Theophilus Paintsil Portfolio",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Theophilus Paintsil Portfolio",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Theophilus Paintsil | Senior Software Engineer & Technical Lead",
-    description:
-      "Building scalable cloud-native systems and leading engineering delivery.",
+    title: "Theophilus Paintsil | Tech Lead",
+    description: "Building scalable systems in Fintech & IoT.",
+    images: ["/og-image.png"],
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
+  alternates: {
+    canonical: siteUrl,
   },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 5,
-  userScalable: true,
-  themeColor: "#0f0f0f",
+  themeColor: "#121212", // Updated to match your website's charcoal aesthetic
 };
 
 export default function RootLayout({
@@ -89,8 +74,33 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // JSON-LD Structured Data
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Theophilus Paintsil",
+    "jobTitle": "Senior Software Engineer & Technical Lead",
+    "url": siteUrl,
+    "sameAs": [
+      "https://www.linkedin.com/in/theopaintsil",
+      "https://github.com/theopaintsil"
+    ],
+    "description": "Expert in Cloud-Native Architecture and Technical Leadership.",
+    "hasPart": [
+      { "@type": "WebPageElement", "name": "Projects", "url": `${siteUrl}/#projects` },
+      { "@type": "WebPageElement", "name": "Experience", "url": `${siteUrl}/#experience` },
+      { "@type": "WebPageElement", "name": "Contact", "url": `${siteUrl}/#contact` }
+    ]
+  };
+
   return (
     <html lang="en" className={`${montserrat.variable} ${geistMono.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="font-sans antialiased bg-background text-foreground">
         {children}
         <Analytics />
