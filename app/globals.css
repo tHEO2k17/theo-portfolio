@@ -112,6 +112,17 @@
     padding: 6rem 1rem;
   }
 
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+
   @media (max-width: 768px) {
     .section-py {
       padding: 4rem 1rem;

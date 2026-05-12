@@ -26,6 +26,7 @@ export function Footer() {
                   { label: 'Home', href: '#hero' },
                   { label: 'About', href: '#about' },
                   { label: 'Experience', href: '#experience' },
+                  { label: 'Articles', href: '/articles' },
                   { label: 'Contact', href: '#contact' },
                 ].map((link) => (
                   <li key={link.href}>
