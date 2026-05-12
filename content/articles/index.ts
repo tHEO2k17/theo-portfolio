@@ -1465,19 +1465,20 @@ const detailedFollowUpSections: Record<string, Article["sections"][number]> = {
       },
     ],
   },
-  "developing-scalable-solutions-for-ghanaian-users-as-a-secure-software-lifecycle-professional": {
-    id: "practical-detail",
-    heading: "Practical detail: graceful degradation before failure",
-    paragraphs: [
-      "A resilient product gives the user a fallback instead of a blank screen or a generic timeout. That usually means cached data, clear retry states, and a visible last-updated time.",
-      "When the network is weak, users care more about certainty than freshness alone.",
-    ],
-    blocks: [
-      {
-        type: "code",
-        label: "Example: response states to show in the UI",
-        language: "json",
-        code: `{
+  "developing-scalable-solutions-for-ghanaian-users-as-a-secure-software-lifecycle-professional":
+    {
+      id: "practical-detail",
+      heading: "Practical detail: graceful degradation before failure",
+      paragraphs: [
+        "A resilient product gives the user a fallback instead of a blank screen or a generic timeout. That usually means cached data, clear retry states, and a visible last-updated time.",
+        "When the network is weak, users care more about certainty than freshness alone.",
+      ],
+      blocks: [
+        {
+          type: "code",
+          label: "Example: response states to show in the UI",
+          language: "json",
+          code: `{
   "state": "fresh",
   "updatedAt": "2026-05-12T09:10:00Z"
 }
@@ -1487,9 +1488,9 @@ const detailedFollowUpSections: Record<string, Article["sections"][number]> = {
   "updatedAt": "2026-05-12T08:10:00Z",
   "retryInSeconds": 30
 }`,
-      },
-    ],
-  },
+        },
+      ],
+    },
   "structuring-large-flutter-applications-using-clean-architecture": {
     id: "practical-detail",
     heading: "Practical detail: where MVVM helps and where it can get noisy",
@@ -1510,7 +1511,8 @@ const detailedFollowUpSections: Record<string, Article["sections"][number]> = {
   },
   "lessons-from-building-cloud-native-systems-with-nextjs-and-nestjs": {
     id: "practical-detail",
-    heading: "Practical detail: keep the request path and background work separate",
+    heading:
+      "Practical detail: keep the request path and background work separate",
     paragraphs: [
       "The request path should answer quickly. Anything slow, retry-heavy, or side-effect heavy belongs in a queue or another async boundary.",
       "That separation keeps the user-facing code simple and makes failures easier to observe.",
@@ -1618,24 +1620,25 @@ presentational component -> renders props only`,
       },
     ],
   },
-  "how-to-refactor-a-monolith-into-clearer-modules-without-breaking-everything": {
-    id: "practical-detail",
-    heading: "Practical detail: refactor the seams, not the whole system",
-    paragraphs: [
-      "The safest refactor order is the one that reduces coupling before changing behavior. Move the seam first, then the code behind it.",
-      "That way every step gives you a smaller, more testable surface.",
-    ],
-    blocks: [
-      {
-        type: "list",
-        items: [
-          "Start where the most change is happening already.",
-          "Pull out dependency seams around I/O and integrations first.",
-          "Leave the business rule code alone until the boundary is stable.",
-        ],
-      },
-    ],
-  },
+  "how-to-refactor-a-monolith-into-clearer-modules-without-breaking-everything":
+    {
+      id: "practical-detail",
+      heading: "Practical detail: refactor the seams, not the whole system",
+      paragraphs: [
+        "The safest refactor order is the one that reduces coupling before changing behavior. Move the seam first, then the code behind it.",
+        "That way every step gives you a smaller, more testable surface.",
+      ],
+      blocks: [
+        {
+          type: "list",
+          items: [
+            "Start where the most change is happening already.",
+            "Pull out dependency seams around I/O and integrations first.",
+            "Leave the business rule code alone until the boundary is stable.",
+          ],
+        },
+      ],
+    },
   "how-to-set-up-a-practical-ci-pipeline-that-catches-regressions-early": {
     id: "practical-detail",
     heading: "Practical detail: use CI to protect merge confidence",
@@ -1691,27 +1694,29 @@ feature_retry_count`,
       },
     ],
   },
-  "how-to-use-ai-tools-in-a-software-workflow-without-losing-engineering-judgment": {
-    id: "practical-detail",
-    heading: "Practical detail: know when to reject AI output",
-    paragraphs: [
-      "Reject the suggestion when the model cannot explain the tradeoff, when the scope drifted, or when the output makes verification harder instead of easier.",
-      "Speed is only useful if the result stays reviewable.",
-    ],
-    blocks: [
-      {
-        type: "list",
-        items: [
-          "Reject it if the generated code is longer than the original problem needs.",
-          "Reject it if you cannot test the behavior in a few minutes.",
-          "Reject it if the output creates hidden dependencies or fragile abstractions.",
-        ],
-      },
-    ],
-  },
+  "how-to-use-ai-tools-in-a-software-workflow-without-losing-engineering-judgment":
+    {
+      id: "practical-detail",
+      heading: "Practical detail: know when to reject AI output",
+      paragraphs: [
+        "Reject the suggestion when the model cannot explain the tradeoff, when the scope drifted, or when the output makes verification harder instead of easier.",
+        "Speed is only useful if the result stays reviewable.",
+      ],
+      blocks: [
+        {
+          type: "list",
+          items: [
+            "Reject it if the generated code is longer than the original problem needs.",
+            "Reject it if you cannot test the behavior in a few minutes.",
+            "Reject it if the output creates hidden dependencies or fragile abstractions.",
+          ],
+        },
+      ],
+    },
   "how-to-plan-and-run-a-technical-architecture-workshop-that-actually-helps": {
     id: "practical-detail",
-    heading: "Practical detail: finish with an artifact, not just a conversation",
+    heading:
+      "Practical detail: finish with an artifact, not just a conversation",
     paragraphs: [
       "The workshop is only useful if someone can read the output later and know what changed, what was rejected, and what comes next.",
       "That artifact can be a short note, a decision record, or a follow-up issue list.",
@@ -1729,6 +1734,162 @@ feature_retry_count`,
   },
 };
 
+const readMoreLinks: Record<string, NonNullable<Article["readMore"]>> = {
+  "top-10-things-i-would-do-if-i-were-starting-again-as-a-junior-developer": [
+    {
+      label: "MDN Learn web development",
+      url: "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+    },
+    {
+      label: "freeCodeCamp curriculum",
+      url: "https://www.freecodecamp.org/learn/",
+    },
+  ],
+  "developing-scalable-solutions-for-ghanaian-users-as-a-secure-software-lifecycle-professional":
+    [
+      {
+        label: "web.dev offline and resilience guidance",
+        url: "https://web.dev/articles/offline-cookbook",
+      },
+      {
+        label: "OWASP Top 10",
+        url: "https://owasp.org/www-project-top-ten/",
+      },
+    ],
+  "structuring-large-flutter-applications-using-clean-architecture": [
+    {
+      label: "Flutter documentation",
+      url: "https://docs.flutter.dev/",
+    },
+    {
+      label: "Flutter state management overview",
+      url: "https://docs.flutter.dev/data-and-backend/state-mgmt/intro",
+    },
+  ],
+  "lessons-from-building-cloud-native-systems-with-nextjs-and-nestjs": [
+    {
+      label: "Next.js documentation",
+      url: "https://nextjs.org/docs",
+    },
+    {
+      label: "NestJS documentation",
+      url: "https://docs.nestjs.com/",
+    },
+  ],
+  "why-technical-leadership-is-more-than-just-writing-code": [
+    {
+      label: "Google re:Work on team effectiveness",
+      url: "https://rework.withgoogle.com/guides/understanding-team-effectiveness/steps/introduction/",
+    },
+    {
+      label: "Harvard Business Review on team performance",
+      url: "https://hbr.org/topic/team-performance",
+    },
+  ],
+  "how-to-design-api-endpoints-that-stay-small-predictable-and-easy-to-test": [
+    {
+      label: "Microsoft REST API guidelines",
+      url: "https://github.com/microsoft/api-guidelines",
+    },
+    {
+      label: "OWASP API Security Top 10",
+      url: "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+    },
+  ],
+  "how-to-structure-a-react-frontend-so-ui-data-and-state-do-not-collide": [
+    {
+      label: "React documentation",
+      url: "https://react.dev/learn",
+    },
+    {
+      label: "Next.js documentation",
+      url: "https://nextjs.org/docs",
+    },
+  ],
+  "how-to-debug-a-production-incident-without-guessing": [
+    {
+      label: "Google SRE books",
+      url: "https://sre.google/books/",
+    },
+    {
+      label: "OpenTelemetry documentation",
+      url: "https://opentelemetry.io/docs/",
+    },
+  ],
+  "how-to-build-offline-first-mobile-features-for-unstable-networks": [
+    {
+      label: "web.dev offline cookbook",
+      url: "https://web.dev/articles/offline-cookbook",
+    },
+    {
+      label: "MDN service worker guide",
+      url: "https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API",
+    },
+  ],
+  "how-to-refactor-a-monolith-into-clearer-modules-without-breaking-everything":
+    [
+      {
+        label: "Martin Fowler on monolith first",
+        url: "https://martinfowler.com/bliki/MonolithFirst.html",
+      },
+      {
+        label: "Martin Fowler on evolutionary architecture",
+        url: "https://martinfowler.com/articles/evolutionary-architecture/",
+      },
+    ],
+  "how-to-set-up-a-practical-ci-pipeline-that-catches-regressions-early": [
+    {
+      label: "GitHub Actions documentation",
+      url: "https://docs.github.com/actions",
+    },
+    {
+      label: "GitHub Actions security hardening",
+      url: "https://docs.github.com/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions",
+    },
+  ],
+  "how-to-build-a-feature-team-feedback-loop-with-logging-metrics-and-alerts": [
+    {
+      label: "OpenTelemetry documentation",
+      url: "https://opentelemetry.io/docs/",
+    },
+    {
+      label: "Grafana observability resources",
+      url: "https://grafana.com/solutions/observability/",
+    },
+  ],
+  "how-to-document-engineering-decisions-so-the-team-can-move-faster": [
+    {
+      label: "Architecture decision records",
+      url: "https://adr.github.io/",
+    },
+    {
+      label: "ThoughtWorks on ADRs",
+      url: "https://www.thoughtworks.com/en-gb/insights/blog/architecture-decision-records-why-and-how-to-use-them",
+    },
+  ],
+  "how-to-use-ai-tools-in-a-software-workflow-without-losing-engineering-judgment":
+    [
+      {
+        label: "OpenAI prompt engineering guide",
+        url: "https://platform.openai.com/docs/guides/prompt-engineering",
+      },
+      {
+        label: "Google AI prompting guide",
+        url: "https://ai.google.dev/gemini-api/docs/prompting",
+      },
+    ],
+  "how-to-plan-and-run-a-technical-architecture-workshop-that-actually-helps": [
+    {
+      label: "Atlassian architecture decision record play",
+      url: "https://www.atlassian.com/team-playbook/plays/architecture-decision-record",
+    },
+    {
+      label: "Martin Fowler on software architecture",
+      url: "https://martinfowler.com/architecture/",
+    },
+  ],
+};
+
 export const articles: Article[] = baseArticles.map((article) => {
   const practicalSection = practicalExampleSections[article.slug];
   const detailedSection = detailedFollowUpSections[article.slug];
@@ -1744,5 +1905,6 @@ export const articles: Article[] = baseArticles.map((article) => {
       ...(practicalSection ? [practicalSection] : []),
       ...(detailedSection ? [detailedSection] : []),
     ],
+    readMore: readMoreLinks[article.slug] ?? [],
   };
 });

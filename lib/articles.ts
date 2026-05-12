@@ -7,7 +7,7 @@ import type {
   TableOfContentsItem,
 } from "@/types/article";
 
-const WORDS_PER_MINUTE = 220;
+const WORDS_PER_MINUTE = 180;
 
 function countWords(text: string) {
   return text.trim().split(/\s+/).filter(Boolean).length;

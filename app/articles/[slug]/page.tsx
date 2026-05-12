@@ -267,6 +267,32 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             ))}
           </section>
         ))}
+
+        {article.readMore?.length ? (
+          <section className="mt-10 border-t border-border/30 pt-8">
+            <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-text-tertiary">
+              Read more
+            </h2>
+            <p className="mt-3 max-w-2xl text-sm leading-7 text-text-secondary md:text-base md:leading-8">
+              Use these references to go deeper on the framework or pattern
+              discussed above.
+            </p>
+            <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+              {article.readMore.map((link) => (
+                <li key={link.url}>
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block rounded-lg border border-border/40 bg-bg-secondary/35 px-4 py-3 text-sm font-medium text-text-secondary transition-colors hover:border-accent-bronze/50 hover:text-accent-warm"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
       </ArticleLayout>
     </>
   );

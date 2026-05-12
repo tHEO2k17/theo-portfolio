@@ -23,6 +23,11 @@ export type ArticleContentBlock =
       code: string;
     };
 
+export type ArticleReadMoreLink = {
+  label: string;
+  url: string;
+};
+
 export type ArticleSection = {
   id: string;
   heading: string;
@@ -46,6 +51,7 @@ export type Article = {
   featured?: boolean;
   coverImage?: string;
   coverAlt?: string;
+  readMore?: ArticleReadMoreLink[];
   sections: ArticleSection[];
 };
 
