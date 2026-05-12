@@ -35,20 +35,26 @@ export function ArticleCard({ article, featured = false }: ArticleCardProps) {
               Featured
             </span>
           ) : null}
-          <span className="text-[11px] uppercase tracking-[0.2em] text-text-tertiary">{article.category}</span>
+          <span className="text-[11px] uppercase tracking-[0.2em] text-text-tertiary">
+            {article.category}
+          </span>
         </div>
 
         <div className="space-y-2.5">
           <div className="flex flex-wrap items-center gap-2 text-sm text-text-tertiary">
-            <time dateTime={article.publishedAt}>{new Intl.DateTimeFormat("en", {
-              month: "short",
-              day: "numeric",
-              year: "numeric",
-            }).format(new Date(article.publishedAt))}</time>
+            <time dateTime={article.publishedAt}>
+              {new Intl.DateTimeFormat("en", {
+                month: "short",
+                day: "numeric",
+                year: "numeric",
+              }).format(new Date(article.publishedAt))}
+            </time>
             <span className="h-1 w-1 rounded-full bg-border" />
             <span>{article.readingTime}</span>
           </div>
-          <h2 className={`text-balance font-semibold tracking-tight text-foreground ${featured ? "text-2xl md:text-[1.85rem]" : "text-xl md:text-[1.35rem]"}`}>
+          <h2
+            className={`text-balance font-semibold tracking-tight text-foreground ${featured ? "text-2xl md:text-[1.85rem]" : "text-xl md:text-[1.35rem]"}`}
+          >
             {article.title}
           </h2>
           <p className="max-w-2xl text-sm leading-6 text-text-secondary">

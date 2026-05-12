@@ -8,8 +8,14 @@ export function ArticleShare({ title, url }: ArticleShareProps) {
   const encodedUrl = encodeURIComponent(url);
 
   return (
-    <section aria-labelledby="share-article" className="border-t border-border/30 pt-6">
-      <h2 id="share-article" className="text-xs font-semibold uppercase tracking-[0.2em] text-text-tertiary">
+    <section
+      aria-labelledby="share-article"
+      className="border-t border-border/30 pt-6"
+    >
+      <h2
+        id="share-article"
+        className="text-xs font-semibold uppercase tracking-[0.2em] text-text-tertiary"
+      >
         Share this article
       </h2>
       <div className="mt-4 flex flex-wrap gap-2 sm:gap-3">

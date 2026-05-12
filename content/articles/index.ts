@@ -3,7 +3,8 @@ import type { Article } from "@/types/article";
 const baseArticles: Article[] = [
   {
     slug: "top-10-things-i-would-do-if-i-were-starting-again-as-a-junior-developer",
-    title: "Top 10 Things I Would Do If I Were Starting Again as a Junior Developer",
+    title:
+      "Top 10 Things I Would Do If I Were Starting Again as a Junior Developer",
     subtitle:
       "The habits, fundamentals, and systems thinking that would shorten the learning curve without trading away depth.",
     excerpt:
@@ -13,7 +14,13 @@ const baseArticles: Article[] = [
     author: "Theophilus Paintsil",
     authorRole: "Senior Software Engineer / Technical Lead",
     category: "Career Growth",
-    tags: ["Junior Developers", "Fundamentals", "Git", "Debugging", "Communication"],
+    tags: [
+      "Junior Developers",
+      "Fundamentals",
+      "Git",
+      "Debugging",
+      "Communication",
+    ],
     featured: true,
     coverImage: "/articles/junior-developer-roadmap.jpg",
     coverAlt: "Roadmap for junior developers",
@@ -72,7 +79,8 @@ const baseArticles: Article[] = [
   },
   {
     slug: "developing-scalable-solutions-for-ghanaian-users-as-a-secure-software-lifecycle-professional",
-    title: "Developing Scalable Solutions for Ghanaian Users as a Secure Software Lifecycle Professional",
+    title:
+      "Developing Scalable Solutions for Ghanaian Users as a Secure Software Lifecycle Professional",
     subtitle:
       "Designing for unstable networks, payment realities, and trust-first experiences in African markets.",
     excerpt:
@@ -142,7 +150,13 @@ const baseArticles: Article[] = [
     author: "Theophilus Paintsil",
     authorRole: "Senior Software Engineer / Technical Lead",
     category: "Mobile Engineering",
-    tags: ["Flutter", "Clean Architecture", "Riverpod", "Repository Pattern", "Mobile"],
+    tags: [
+      "Flutter",
+      "Clean Architecture",
+      "Riverpod",
+      "Repository Pattern",
+      "Mobile",
+    ],
     coverImage: "/articles/flutter-clean-architecture.jpg",
     coverAlt: "Flutter clean architecture layers",
     sections: [
@@ -219,7 +233,8 @@ const baseArticles: Article[] = [
       },
       {
         id: "queues-and-redis",
-        heading: "Queues, Redis, and asynchronous work are about user experience",
+        heading:
+          "Queues, Redis, and asynchronous work are about user experience",
         paragraphs: [
           "Anything slow, retry-prone, or side-effect heavy should usually be pushed out of the request-response path. That includes notifications, imports, webhook reconciliation, and background processing.",
           "Redis-backed queues do not solve everything, but they do let the user get a fast answer while the system finishes the expensive work safely in the background.",
@@ -227,7 +242,8 @@ const baseArticles: Article[] = [
       },
       {
         id: "observability-and-deployments",
-        heading: "Production quality is visible in observability and deployments",
+        heading:
+          "Production quality is visible in observability and deployments",
         paragraphs: [
           "Cloud-native systems are only practical when deployment is repeatable and operational signals are visible. Docker helps with parity, but logs, traces, and metrics are what keep the system understandable after release.",
           "The mature approach is not to chase complexity. It is to reduce unknowns and make every boundary observable.",
@@ -247,7 +263,13 @@ const baseArticles: Article[] = [
     author: "Theophilus Paintsil",
     authorRole: "Senior Software Engineer / Technical Lead",
     category: "Leadership",
-    tags: ["Technical Leadership", "Mentoring", "Architecture", "Delivery", "Communication"],
+    tags: [
+      "Technical Leadership",
+      "Mentoring",
+      "Architecture",
+      "Delivery",
+      "Communication",
+    ],
     coverImage: "/articles/technical-leadership.jpg",
     coverAlt: "Technical leadership and mentoring",
     sections: [
@@ -261,7 +283,8 @@ const baseArticles: Article[] = [
       },
       {
         id: "architecture-as-communication",
-        heading: "Architecture is a communication problem as much as a technical one",
+        heading:
+          "Architecture is a communication problem as much as a technical one",
         paragraphs: [
           "A strong architecture is not just a diagram. It is a shared understanding of dependencies, risks, and the order in which decisions should be made.",
           "When a lead cannot explain the system simply, the system is usually too hard to maintain. Good architecture reduces the number of surprises the team has to carry.",
@@ -282,7 +305,8 @@ const baseArticles: Article[] = [
       },
       {
         id: "balance-engineering-and-business",
-        heading: "Balancing engineering and business pressure is a daily decision",
+        heading:
+          "Balancing engineering and business pressure is a daily decision",
         paragraphs: [
           "Technical leadership requires empathy for the business outcome and honesty about the engineering cost. Shipping quickly matters, but so does knowing when a shortcut will become future drag.",
           "The best leads build trust by being consistent: they surface risk early, communicate trade-offs clearly, and keep the team focused on durable progress.",
@@ -292,7 +316,8 @@ const baseArticles: Article[] = [
   },
   {
     slug: "how-to-design-api-endpoints-that-stay-small-predictable-and-easy-to-test",
-    title: "How to Design API Endpoints That Stay Small, Predictable, and Easy to Test",
+    title:
+      "How to Design API Endpoints That Stay Small, Predictable, and Easy to Test",
     subtitle:
       "A practical approach to keeping handlers thin, contracts clear, and backend changes low-risk.",
     excerpt:
@@ -352,7 +377,8 @@ const baseArticles: Article[] = [
   },
   {
     slug: "how-to-structure-a-react-frontend-so-ui-data-and-state-do-not-collide",
-    title: "How to Structure a React Frontend So UI, Data, and State Do Not Collide",
+    title:
+      "How to Structure a React Frontend So UI, Data, and State Do Not Collide",
     subtitle:
       "A practical way to keep component logic small, data access predictable, and state transitions understandable.",
     excerpt:
@@ -362,7 +388,13 @@ const baseArticles: Article[] = [
     author: "Theophilus Paintsil",
     authorRole: "Senior Software Engineer / Technical Lead",
     category: "Frontend Engineering",
-    tags: ["React", "State Management", "Components", "UI Architecture", "Forms"],
+    tags: [
+      "React",
+      "State Management",
+      "Components",
+      "UI Architecture",
+      "Forms",
+    ],
     coverImage: "/articles/react-frontend-workspace.jpg",
     coverAlt: "Frontend developers working around laptops in a workspace",
     sections: [
@@ -517,7 +549,8 @@ const baseArticles: Article[] = [
   },
   {
     slug: "how-to-refactor-a-monolith-into-clearer-modules-without-breaking-everything",
-    title: "How to Refactor a Monolith Into Clearer Modules Without Breaking Everything",
+    title:
+      "How to Refactor a Monolith Into Clearer Modules Without Breaking Everything",
     subtitle:
       "A gradual approach to carving out boundaries while keeping the existing product stable.",
     excerpt:
@@ -527,7 +560,13 @@ const baseArticles: Article[] = [
     author: "Theophilus Paintsil",
     authorRole: "Senior Software Engineer / Technical Lead",
     category: "Architecture",
-    tags: ["Monolith", "Refactoring", "Boundaries", "Modular Design", "Testing"],
+    tags: [
+      "Monolith",
+      "Refactoring",
+      "Boundaries",
+      "Modular Design",
+      "Testing",
+    ],
     coverImage: "/articles/refactor-monolith-modules.jpg",
     coverAlt: "Software architecture planning on a whiteboard",
     sections: [
@@ -572,7 +611,8 @@ const baseArticles: Article[] = [
   },
   {
     slug: "how-to-set-up-a-practical-ci-pipeline-that-catches-regressions-early",
-    title: "How to Set Up a Practical CI Pipeline That Catches Regressions Early",
+    title:
+      "How to Set Up a Practical CI Pipeline That Catches Regressions Early",
     subtitle:
       "A lean CI approach that prioritizes fast feedback, meaningful checks, and stable releases.",
     excerpt:
@@ -627,7 +667,8 @@ const baseArticles: Article[] = [
   },
   {
     slug: "how-to-build-a-feature-team-feedback-loop-with-logging-metrics-and-alerts",
-    title: "How to Build a Feature Team Feedback Loop With Logging, Metrics, and Alerts",
+    title:
+      "How to Build a Feature Team Feedback Loop With Logging, Metrics, and Alerts",
     subtitle:
       "A practical way to turn production signals into product and engineering decisions.",
     excerpt:
@@ -692,7 +733,13 @@ const baseArticles: Article[] = [
     author: "Theophilus Paintsil",
     authorRole: "Senior Software Engineer / Technical Lead",
     category: "Team Culture",
-    tags: ["Documentation", "Decision Records", "Communication", "Architecture", "Teams"],
+    tags: [
+      "Documentation",
+      "Decision Records",
+      "Communication",
+      "Architecture",
+      "Teams",
+    ],
     coverImage: "/articles/engineering-decisions-documentation.jpg",
     coverAlt: "Engineers discussing technical decisions in a planning session",
     sections: [
@@ -737,7 +784,8 @@ const baseArticles: Article[] = [
   },
   {
     slug: "how-to-use-ai-tools-in-a-software-workflow-without-losing-engineering-judgment",
-    title: "How to Use AI Tools in a Software Workflow Without Losing Engineering Judgment",
+    title:
+      "How to Use AI Tools in a Software Workflow Without Losing Engineering Judgment",
     subtitle:
       "A practical way to let AI assist with speed while keeping technical decisions grounded in evidence.",
     excerpt:
@@ -747,7 +795,13 @@ const baseArticles: Article[] = [
     author: "Theophilus Paintsil",
     authorRole: "Senior Software Engineer / Technical Lead",
     category: "AI Engineering",
-    tags: ["AI Tools", "Developer Workflow", "Review", "Prompting", "Productivity"],
+    tags: [
+      "AI Tools",
+      "Developer Workflow",
+      "Review",
+      "Prompting",
+      "Productivity",
+    ],
     coverImage: "/articles/ai-engineering-workflow.jpg",
     coverAlt: "Developer workspace using AI tools on a laptop",
     sections: [
@@ -761,7 +815,8 @@ const baseArticles: Article[] = [
       },
       {
         id: "verify-everything",
-        heading: "2. Verify the output like you would any other untrusted input",
+        heading:
+          "2. Verify the output like you would any other untrusted input",
         paragraphs: [
           "Treat AI-generated code the way you would treat code from an unfamiliar package: useful, but not trusted until it is checked. Read the edge cases, run the tests, and confirm the assumptions.",
           "This discipline protects you from shipping plausible nonsense.",
@@ -792,7 +847,8 @@ const baseArticles: Article[] = [
   },
   {
     slug: "how-to-plan-and-run-a-technical-architecture-workshop-that-actually-helps",
-    title: "How to Plan and Run a Technical Architecture Workshop That Actually Helps",
+    title:
+      "How to Plan and Run a Technical Architecture Workshop That Actually Helps",
     subtitle:
       "A practical meeting format for turning vague architecture debates into decisions the team can use.",
     excerpt:
@@ -802,7 +858,13 @@ const baseArticles: Article[] = [
     author: "Theophilus Paintsil",
     authorRole: "Senior Software Engineer / Technical Lead",
     category: "Architecture",
-    tags: ["Workshops", "Architecture", "Planning", "Decision Making", "Collaboration"],
+    tags: [
+      "Workshops",
+      "Architecture",
+      "Planning",
+      "Decision Making",
+      "Collaboration",
+    ],
     coverImage: "/articles/architecture-workshop.jpg",
     coverAlt: "Team collaboration around an architecture whiteboard",
     sections: [
@@ -889,18 +951,19 @@ week-4/
       },
     ],
   },
-  "developing-scalable-solutions-for-ghanaian-users-as-a-secure-software-lifecycle-professional": {
-    id: "practical-example",
-    heading: "Practical example: low-bandwidth cache and retry flow",
-    paragraphs: [
-      "For unstable networks, design the request path so the user still sees useful data and failed actions retry safely.",
-    ],
-    blocks: [
-      {
-        type: "code",
-        label: "Example: Cache-first request with safe retry",
-        language: "ts",
-        code: `type Cached<T> = { value: T; fetchedAt: number };
+  "developing-scalable-solutions-for-ghanaian-users-as-a-secure-software-lifecycle-professional":
+    {
+      id: "practical-example",
+      heading: "Practical example: low-bandwidth cache and retry flow",
+      paragraphs: [
+        "For unstable networks, design the request path so the user still sees useful data and failed actions retry safely.",
+      ],
+      blocks: [
+        {
+          type: "code",
+          label: "Example: Cache-first request with safe retry",
+          language: "ts",
+          code: `type Cached<T> = { value: T; fetchedAt: number };
 
 async function loadProfile(userId: string) {
   const cached = await localStore.get<Cached<UserProfile>>(\`profile:\${userId}\`);
@@ -917,13 +980,13 @@ async function loadProfile(userId: string) {
     throw new Error("Profile unavailable. Try again when connection improves.");
   }
 }`,
-      },
-      {
-        type: "callout",
-        text: "Final note: show users when data is stale so trust stays high.",
-      },
-    ],
-  },
+        },
+        {
+          type: "callout",
+          text: "Final note: show users when data is stale so trust stays high.",
+        },
+      ],
+    },
   "structuring-large-flutter-applications-using-clean-architecture": {
     id: "practical-example",
     heading: "Practical example: Flutter MVVM boundary",
@@ -1193,18 +1256,19 @@ async function flushQueue() {
       },
     ],
   },
-  "how-to-refactor-a-monolith-into-clearer-modules-without-breaking-everything": {
-    id: "practical-example",
-    heading: "Practical example: before and after module seam",
-    paragraphs: [
-      "Refactors stay safe when you define boundaries first, then move one behavior slice at a time.",
-    ],
-    blocks: [
-      {
-        type: "code",
-        label: "Example: Architecture flow (before vs after)",
-        language: "text",
-        code: `Before:
+  "how-to-refactor-a-monolith-into-clearer-modules-without-breaking-everything":
+    {
+      id: "practical-example",
+      heading: "Practical example: before and after module seam",
+      paragraphs: [
+        "Refactors stay safe when you define boundaries first, then move one behavior slice at a time.",
+      ],
+      blocks: [
+        {
+          type: "code",
+          label: "Example: Architecture flow (before vs after)",
+          language: "text",
+          code: `Before:
 HTTP Handler -> GiantService -> DB + Email + Payment + Audit
 
 After:
@@ -1213,16 +1277,16 @@ OrdersModule -> PaymentPort
 OrdersModule -> AuditPort
 OrdersModule -> OrdersRepository
 Background Worker -> EmailPort`,
-      },
-      {
-        type: "list",
-        items: [
-          "Tradeoff: extra interfaces increase initial boilerplate.",
-          "Benefit: safer tests and smaller blast radius during change.",
-        ],
-      },
-    ],
-  },
+        },
+        {
+          type: "list",
+          items: [
+            "Tradeoff: extra interfaces increase initial boilerplate.",
+            "Benefit: safer tests and smaller blast radius during change.",
+          ],
+        },
+      ],
+    },
   "how-to-set-up-a-practical-ci-pipeline-that-catches-regressions-early": {
     id: "practical-example",
     heading: "Practical example: focused GitHub Actions workflow",
@@ -1318,18 +1382,19 @@ Re-evaluate in 90 days based on retry patterns.`,
       },
     ],
   },
-  "how-to-use-ai-tools-in-a-software-workflow-without-losing-engineering-judgment": {
-    id: "practical-example",
-    heading: "Practical example: AI prompt and review workflow",
-    paragraphs: [
-      "Treat AI output as a first draft. Use a checklist that forces context and verification.",
-    ],
-    blocks: [
-      {
-        type: "code",
-        label: "Example: Prompt checklist",
-        language: "text",
-        code: `Task:
+  "how-to-use-ai-tools-in-a-software-workflow-without-losing-engineering-judgment":
+    {
+      id: "practical-example",
+      heading: "Practical example: AI prompt and review workflow",
+      paragraphs: [
+        "Treat AI output as a first draft. Use a checklist that forces context and verification.",
+      ],
+      blocks: [
+        {
+          type: "code",
+          label: "Example: Prompt checklist",
+          language: "text",
+          code: `Task:
 - What exact behavior should change?
 
 Constraints:
@@ -1339,19 +1404,19 @@ Constraints:
 Verification:
 - Which tests/build commands must pass?
 - What edge cases must be checked?`,
-      },
-      {
-        type: "code",
-        label: "Example: Review workflow",
-        language: "text",
-        code: `1. Read generated diff for scope drift.
+        },
+        {
+          type: "code",
+          label: "Example: Review workflow",
+          language: "text",
+          code: `1. Read generated diff for scope drift.
 2. Run build and typecheck.
 3. Test one happy path and one failure path.
 4. Confirm logs/errors are still actionable.
 5. Document what was accepted and why.`,
-      },
-    ],
-  },
+        },
+      ],
+    },
   "how-to-plan-and-run-a-technical-architecture-workshop-that-actually-helps": {
     id: "practical-example",
     heading: "Practical example: architecture workshop flow",
@@ -1381,15 +1446,303 @@ Verification:
   },
 };
 
+const detailedFollowUpSections: Record<string, Article["sections"][number]> = {
+  "top-10-things-i-would-do-if-i-were-starting-again-as-a-junior-developer": {
+    id: "practical-detail",
+    heading: "Practical detail: how to turn practice into a repeatable habit",
+    paragraphs: [
+      "The goal is not to collect more theory. It is to build a loop where each project teaches one thing you can reuse on the next one.",
+      "Write down what failed, what took too long, and what you would do differently next time. That turns every project into a smaller, more focused lesson.",
+    ],
+    blocks: [
+      {
+        type: "list",
+        items: [
+          "Write one note after each build about what felt unclear.",
+          "Keep a small debugging log with the cause, fix, and lesson.",
+          "Rebuild one old feature after a week to check whether the concept stuck.",
+        ],
+      },
+    ],
+  },
+  "developing-scalable-solutions-for-ghanaian-users-as-a-secure-software-lifecycle-professional": {
+    id: "practical-detail",
+    heading: "Practical detail: graceful degradation before failure",
+    paragraphs: [
+      "A resilient product gives the user a fallback instead of a blank screen or a generic timeout. That usually means cached data, clear retry states, and a visible last-updated time.",
+      "When the network is weak, users care more about certainty than freshness alone.",
+    ],
+    blocks: [
+      {
+        type: "code",
+        label: "Example: response states to show in the UI",
+        language: "json",
+        code: `{
+  "state": "fresh",
+  "updatedAt": "2026-05-12T09:10:00Z"
+}
+
+{
+  "state": "stale",
+  "updatedAt": "2026-05-12T08:10:00Z",
+  "retryInSeconds": 30
+}`,
+      },
+    ],
+  },
+  "structuring-large-flutter-applications-using-clean-architecture": {
+    id: "practical-detail",
+    heading: "Practical detail: where MVVM helps and where it can get noisy",
+    paragraphs: [
+      "MVVM helps when the ViewModel owns screen state and the repository owns data access. It gets noisy when UI widgets start calling repositories directly or when the ViewModel becomes a second domain layer.",
+      "A clean boundary means the screen can change without forcing the rest of the app to follow it.",
+    ],
+    blocks: [
+      {
+        type: "list",
+        items: [
+          "Keep one ViewModel per feature screen or screen group.",
+          "Keep repository interfaces in the domain layer, not in the widget tree.",
+          "Move data mapping into the data layer so the UI never sees DTO noise.",
+        ],
+      },
+    ],
+  },
+  "lessons-from-building-cloud-native-systems-with-nextjs-and-nestjs": {
+    id: "practical-detail",
+    heading: "Practical detail: keep the request path and background work separate",
+    paragraphs: [
+      "The request path should answer quickly. Anything slow, retry-heavy, or side-effect heavy belongs in a queue or another async boundary.",
+      "That separation keeps the user-facing code simple and makes failures easier to observe.",
+    ],
+    blocks: [
+      {
+        type: "code",
+        label: "Example: request lifecycle",
+        language: "text",
+        code: `Client -> Next.js route -> NestJS controller -> command handler -> queue
+Client <- immediate response
+Worker -> queue job -> email/payment/audit side effects`,
+      },
+    ],
+  },
+  "why-technical-leadership-is-more-than-just-writing-code": {
+    id: "practical-detail",
+    heading: "Practical detail: make the decision visible to the team",
+    paragraphs: [
+      "Good leadership is not just deciding. It is making the decision easy to find, easy to challenge, and easy to execute.",
+      "If the team cannot see why a decision was made, they will keep reopening it.",
+    ],
+    blocks: [
+      {
+        type: "list",
+        items: [
+          "Document the constraint that mattered most.",
+          "Call out the option you rejected and why.",
+          "Name the follow-up that would invalidate the decision later.",
+        ],
+      },
+    ],
+  },
+  "how-to-design-api-endpoints-that-stay-small-predictable-and-easy-to-test": {
+    id: "practical-detail",
+    heading: "Practical detail: keep failure states predictable",
+    paragraphs: [
+      "A stable API makes it obvious what happened. The user should not need to guess whether the problem was validation, authorization, or a backend outage.",
+      "That clarity lowers support cost and makes client code much simpler.",
+    ],
+    blocks: [
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "400 for invalid input and missing required fields.",
+          "401 or 403 for auth problems, never a generic 500.",
+          "503 when the dependency is unavailable and a retry is reasonable.",
+        ],
+      },
+    ],
+  },
+  "how-to-structure-a-react-frontend-so-ui-data-and-state-do-not-collide": {
+    id: "practical-detail",
+    heading: "Practical detail: separate state ownership from rendering",
+    paragraphs: [
+      "The cleanest React codebases make it obvious who owns data, who owns derived state, and who only renders props.",
+      "That separation keeps components small and reviewable.",
+    ],
+    blocks: [
+      {
+        type: "code",
+        label: "Example: one state owner per feature",
+        language: "text",
+        code: `page component -> calls hook
+hook -> owns fetch/state orchestration
+service -> owns API calls
+presentational component -> renders props only`,
+      },
+    ],
+  },
+  "how-to-debug-a-production-incident-without-guessing": {
+    id: "practical-detail",
+    heading: "Practical detail: stop at the smallest believable cause",
+    paragraphs: [
+      "Once you have a plausible root cause, verify it with one more signal before you change production. That keeps you from fixing the wrong layer.",
+      "The shortest path to resolution is usually a small, confident change, not a broad rewrite.",
+    ],
+    blocks: [
+      {
+        type: "list",
+        items: [
+          "Confirm the error rate moved after the suspect change.",
+          "Check whether a rollback or config change restores the baseline.",
+          "Record the exact evidence that makes the cause believable.",
+        ],
+      },
+    ],
+  },
+  "how-to-build-offline-first-mobile-features-for-unstable-networks": {
+    id: "practical-detail",
+    heading: "Practical detail: define sync conflicts before they happen",
+    paragraphs: [
+      "If two devices can edit the same thing, write down which fields win, which merge, and which must be resolved manually.",
+      "The worst time to invent conflict rules is during an outage or a user complaint.",
+    ],
+    blocks: [
+      {
+        type: "list",
+        items: [
+          "Use server timestamps for final ordering when edits are independent.",
+          "Use manual review when the same field changes in conflicting ways.",
+          "Always keep the user’s last local draft until sync succeeds.",
+        ],
+      },
+    ],
+  },
+  "how-to-refactor-a-monolith-into-clearer-modules-without-breaking-everything": {
+    id: "practical-detail",
+    heading: "Practical detail: refactor the seams, not the whole system",
+    paragraphs: [
+      "The safest refactor order is the one that reduces coupling before changing behavior. Move the seam first, then the code behind it.",
+      "That way every step gives you a smaller, more testable surface.",
+    ],
+    blocks: [
+      {
+        type: "list",
+        items: [
+          "Start where the most change is happening already.",
+          "Pull out dependency seams around I/O and integrations first.",
+          "Leave the business rule code alone until the boundary is stable.",
+        ],
+      },
+    ],
+  },
+  "how-to-set-up-a-practical-ci-pipeline-that-catches-regressions-early": {
+    id: "practical-detail",
+    heading: "Practical detail: use CI to protect merge confidence",
+    paragraphs: [
+      "A good pipeline gives the team a clear answer: can this safely merge or not? If the answer is noisy, developers start treating it as theatre.",
+      "Fast checks are not about speed alone. They are about trust.",
+    ],
+    blocks: [
+      {
+        type: "list",
+        items: [
+          "Run the cheapest checks first.",
+          "Keep the same commands locally and in CI where possible.",
+          "Fail clearly enough that a developer knows what to fix next.",
+        ],
+      },
+    ],
+  },
+  "how-to-build-a-feature-team-feedback-loop-with-logging-metrics-and-alerts": {
+    id: "practical-detail",
+    heading: "Practical detail: choose metrics that answer a decision",
+    paragraphs: [
+      "If a metric does not help someone choose an action, it is probably just decoration. Keep the signal set small enough that the team can actually use it.",
+      "Tie alerts to user impact, not vanity activity.",
+    ],
+    blocks: [
+      {
+        type: "code",
+        label: "Example: metric naming pattern",
+        language: "text",
+        code: `feature_outcome_rate
+feature_latency_ms
+feature_error_rate
+feature_retry_count`,
+      },
+    ],
+  },
+  "how-to-document-engineering-decisions-so-the-team-can-move-faster": {
+    id: "practical-detail",
+    heading: "Practical detail: keep docs alive by tying them to work",
+    paragraphs: [
+      "Documentation survives when it is part of the workflow, not a separate task. Add it to the same pull request or issue that made the decision necessary.",
+      "Then update it when the decision changes.",
+    ],
+    blocks: [
+      {
+        type: "list",
+        items: [
+          "Link the note from the PR description.",
+          "Add a short owner and review date.",
+          "Delete stale docs when they no longer reflect the system.",
+        ],
+      },
+    ],
+  },
+  "how-to-use-ai-tools-in-a-software-workflow-without-losing-engineering-judgment": {
+    id: "practical-detail",
+    heading: "Practical detail: know when to reject AI output",
+    paragraphs: [
+      "Reject the suggestion when the model cannot explain the tradeoff, when the scope drifted, or when the output makes verification harder instead of easier.",
+      "Speed is only useful if the result stays reviewable.",
+    ],
+    blocks: [
+      {
+        type: "list",
+        items: [
+          "Reject it if the generated code is longer than the original problem needs.",
+          "Reject it if you cannot test the behavior in a few minutes.",
+          "Reject it if the output creates hidden dependencies or fragile abstractions.",
+        ],
+      },
+    ],
+  },
+  "how-to-plan-and-run-a-technical-architecture-workshop-that-actually-helps": {
+    id: "practical-detail",
+    heading: "Practical detail: finish with an artifact, not just a conversation",
+    paragraphs: [
+      "The workshop is only useful if someone can read the output later and know what changed, what was rejected, and what comes next.",
+      "That artifact can be a short note, a decision record, or a follow-up issue list.",
+    ],
+    blocks: [
+      {
+        type: "list",
+        items: [
+          "One decision owner.",
+          "One page summary of options and tradeoffs.",
+          "One follow-up list with due dates.",
+        ],
+      },
+    ],
+  },
+};
+
 export const articles: Article[] = baseArticles.map((article) => {
   const practicalSection = practicalExampleSections[article.slug];
+  const detailedSection = detailedFollowUpSections[article.slug];
 
-  if (!practicalSection) {
+  if (!practicalSection && !detailedSection) {
     return article;
   }
 
   return {
     ...article,
-    sections: [...article.sections, practicalSection],
+    sections: [
+      ...article.sections,
+      ...(practicalSection ? [practicalSection] : []),
+      ...(detailedSection ? [detailedSection] : []),
+    ],
   };
 });

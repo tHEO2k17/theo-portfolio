@@ -22,7 +22,11 @@ function blockWordCount(block: ArticleContentBlock) {
     return block.items.reduce((total, item) => total + countWords(item), 0);
   }
 
-  if (block.type === "heading" || block.type === "paragraph" || block.type === "callout") {
+  if (
+    block.type === "heading" ||
+    block.type === "paragraph" ||
+    block.type === "callout"
+  ) {
     return countWords(block.text);
   }
 
@@ -34,23 +38,30 @@ function sectionWordCount(section: ArticleSection) {
     (total, paragraph) => total + countWords(paragraph),
     0,
   );
-  const bulletWords = section.bullets?.reduce(
-    (total, bullet) => total + countWords(bullet),
-    0,
-  ) ?? 0;
+  const bulletWords =
+    section.bullets?.reduce((total, bullet) => total + countWords(bullet), 0) ??
+    0;
   const calloutWords = section.callout ? countWords(section.callout) : 0;
-  const blockWords = section.blocks?.reduce(
-    (total, block) => total + blockWordCount(block),
-    0,
-  ) ?? 0;
+  const blockWords =
+    section.blocks?.reduce(
+      (total, block) => total + blockWordCount(block),
+      0,
+    ) ?? 0;
 
-  return countWords(section.heading) + paragraphWords + bulletWords + calloutWords + blockWords;
+  return (
+    countWords(section.heading) +
+    paragraphWords +
+    bulletWords +
+    calloutWords +
+    blockWords
+  );
 }
 
 export function getArticles() {
   return [...articles].sort(
     (left, right) =>
-      new Date(right.publishedAt).getTime() - new Date(left.publishedAt).getTime(),
+      new Date(right.publishedAt).getTime() -
+      new Date(left.publishedAt).getTime(),
   );
 }
 
@@ -67,15 +78,28 @@ export function getFeaturedArticle() {
 }
 
 export function getAllArticleTags() {
-  return Array.from(new Set(getArticles().flatMap((article) => article.tags))).sort();
+  return Array.from(
+    new Set(getArticles().flatMap((article) => article.tags)),
+  ).sort();
 }
 
 export function getArticleWordCount(article: Article) {
-  return countWords(article.title) + countWords(article.subtitle) + countWords(article.excerpt) + article.sections.reduce((total, section) => total + sectionWordCount(section), 0);
+  return (
+    countWords(article.title) +
+    countWords(article.subtitle) +
+    countWords(article.excerpt) +
+    article.sections.reduce(
+      (total, section) => total + sectionWordCount(section),
+      0,
+    )
+  );
 }
 
 export function getReadingTime(article: Article) {
-  const minutes = Math.max(1, Math.round(getArticleWordCount(article) / WORDS_PER_MINUTE));
+  const minutes = Math.max(
+    1,
+    Math.round(getArticleWordCount(article) / WORDS_PER_MINUTE),
+  );
   return `${minutes} min read`;
 }
 

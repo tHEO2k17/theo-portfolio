@@ -91,7 +91,9 @@ function renderContentBlock(block: ArticleContentBlock) {
   }
 
   if (block.type === "paragraph") {
-    return <p className="leading-7 text-text-secondary md:leading-8">{block.text}</p>;
+    return (
+      <p className="leading-7 text-text-secondary md:leading-8">{block.text}</p>
+    );
   }
 
   if (block.type === "list") {
@@ -121,7 +123,11 @@ function renderContentBlock(block: ArticleContentBlock) {
   }
 
   if (block.type === "callout") {
-    return <div className="border-l-2 border-accent-bronze/40 pl-4 text-text-secondary">{block.text}</div>;
+    return (
+      <div className="border-l-2 border-accent-bronze/40 pl-4 text-text-secondary">
+        {block.text}
+      </div>
+    );
   }
 
   return (
@@ -255,7 +261,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               </div>
             ) : null}
             {section.blocks?.map((block, index) => (
-              <div key={`${section.id}-block-${index}`}>{renderContentBlock(block)}</div>
+              <div key={`${section.id}-block-${index}`}>
+                {renderContentBlock(block)}
+              </div>
             ))}
           </section>
         ))}

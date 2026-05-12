@@ -1,9 +1,9 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
+import Link from "next/link";
 
 export function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-background border-t border-border/30 py-8 md:py-12">
@@ -15,19 +15,23 @@ export function Footer() {
             <div>
               <h3 className="text-2xl font-bold text-accent-warm mb-2">TP</h3>
               <p className="text-text-secondary text-sm">Theophilus Paintsil</p>
-              <p className="text-text-tertiary text-sm">Senior Software Engineer & Technical Leader</p>
+              <p className="text-text-tertiary text-sm">
+                Senior Software Engineer & Technical Leader
+              </p>
             </div>
 
             {/* Quick links */}
             <div>
-              <h4 className="font-semibold text-foreground mb-4">Quick Links</h4>
+              <h4 className="font-semibold text-foreground mb-4">
+                Quick Links
+              </h4>
               <ul className="space-y-2">
                 {[
-                  { label: 'Home', href: '#hero' },
-                  { label: 'About', href: '#about' },
-                  { label: 'Experience', href: '#experience' },
-                  { label: 'Articles', href: '/articles' },
-                  { label: 'Contact', href: '#contact' },
+                  { label: "Home", href: "#hero" },
+                  { label: "About", href: "#about" },
+                  { label: "Experience", href: "#experience" },
+                  { label: "Articles", href: "/articles" },
+                  { label: "Contact", href: "#contact" },
                 ].map((link) => (
                   <li key={link.href}>
                     <Link
@@ -90,5 +94,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
