@@ -6,7 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://theoonline.netlify.app/sitemap.xml",
-    // sitemap: "https://theophiluspaintsil.com/sitemap.xml",
+    sitemap: "https://theopaintsil.online/sitemap.xml",
   };
 }

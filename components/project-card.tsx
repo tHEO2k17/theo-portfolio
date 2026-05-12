@@ -61,11 +61,12 @@ export function ProjectCard({
         ))}
       </div>
 
-      {link && (
+      {link && link !== "#" ? (
         <a
           href={link}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={`View project ${title}`}
           className="inline-flex items-center text-accent-warm hover:text-accent-bronze transition-colors text-sm font-medium group"
         >
           View Project
@@ -73,6 +74,10 @@ export function ProjectCard({
             className={`ml-2 w-4 h-4 transition-transform ${isHovered ? "translate-x-1" : ""}`}
           />
         </a>
+      ) : (
+        <span className="inline-flex items-center text-text-tertiary text-sm font-medium">
+          In Progress
+        </span>
       )}
     </div>
   );
