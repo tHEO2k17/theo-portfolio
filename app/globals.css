@@ -1339,6 +1339,15 @@
     border-top: 1px solid hsl(0 0% 28% / 0.45);
     background: hsl(0 0% 7%);
     padding-bottom: var(--mobile-safe-bottom);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    contain: layout style paint;
+  }
+
+  html,
+  body {
+    overscroll-behavior-y: none;
   }
 
   .bottom-nav__list {

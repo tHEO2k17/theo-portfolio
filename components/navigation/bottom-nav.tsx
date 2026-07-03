@@ -1,20 +1,34 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useVisualViewportBottom } from "@/hooks/use-visual-viewport-bottom";
+import { useIsMobileViewport } from "@/hooks/use-scroll-hint";
 import { bottomNavItems, isArticleReadingPath } from "@/lib/navigation";
 import { cn } from "@/lib/utils";
 import { NavIcon } from "./nav-icons";
 
 export function BottomNav() {
   const pathname = usePathname();
+  const navRef = useRef<HTMLElement>(null);
+  const [mounted, setMounted] = useState(false);
+  const isMobile = useIsMobileViewport();
+
+  useVisualViewportBottom(navRef, isMobile);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   if (isArticleReadingPath(pathname)) {
     return null;
   }
 
-  return (
+  const nav = (
     <nav
+      ref={navRef}
       className="bottom-nav md:hidden"
       aria-label="Primary navigation"
     >
@@ -44,4 +58,10 @@ export function BottomNav() {
       </ul>
     </nav>
   );
+
+  if (!mounted) {
+    return null;
+  }
+
+  return createPortal(nav, document.body);
 }
