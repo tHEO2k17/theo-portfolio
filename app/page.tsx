@@ -1,60 +1,59 @@
 import { Navigation } from "@/components/navigation";
-import { HeroSection } from "@/components/hero-section";
-import { AboutSection } from "@/components/about-section";
-import { MetricsSection } from "@/components/metrics-section";
-import { ExperienceSection } from "@/components/experience-section";
-import { SkillsSection } from "@/components/skills-section";
-import { ProjectsSection } from "@/components/projects-section";
-import { LeadershipSection } from "@/components/leadership-section";
-import { EducationSection } from "@/components/education-section";
-import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
-
-const structuredData = [
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Theophilus Paintsil",
-    jobTitle: "Senior Software Engineer / Technical Lead",
-    url: "https://theopaintsil.online",
-    image: "https://theopaintsil.online/theophilus-portrait.jpg",
-    sameAs: [
-      "https://linkedin.com/in/theopaintsil",
-      "https://github.com/tHEO2k17",
-    ],
-    description:
-      "Senior Software Engineer and Technical Lead specializing in cloud-native systems, full-stack development, software architecture, DevOps, and AI-assisted product engineering.",
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: "Theophilus Paintsil",
-    url: "https://theopaintsil.online",
-    description:
-      "Portfolio of Theophilus Paintsil, a Senior Software Engineer and Technical Lead specializing in cloud-native systems and full-stack development.",
-  },
-];
+import { LegacyHashRedirect } from "@/components/legacy-hash-redirect";
+import { StructuredData } from "@/components/structured-data";
+import { HomeMobileCarousel } from "@/components/home/home-mobile-carousel";
+import { HomeHeroSection } from "@/components/home/home-hero-section";
+import { HomePhilosophySection } from "@/components/home/home-philosophy-section";
+import { HomeWorkTeaserSection } from "@/components/home/home-work-teaser-section";
+import { HomeExperiencePreviewSection } from "@/components/home/home-experience-preview-section";
+import { HomeWritingTeaserSection } from "@/components/home/home-writing-teaser-section";
+import { HomeContactQuietSection } from "@/components/home/home-contact-quiet-section";
+import { getHomeStructuredData } from "@/lib/structured-data";
+import { MobileOverviewLink } from "@/components/layout/mobile-overview-link";
+import { MobileScrollToTop } from "@/components/layout/mobile-scroll-hint";
+import { PageStagger, PageTransition } from "@/components/motion";
 
 export default function Home() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
-      <main className="min-h-screen overflow-hidden">
-        <Navigation />
-        <HeroSection />
-        <AboutSection />
-        <MetricsSection />
-        <ExperienceSection />
-        <SkillsSection />
-        <ProjectsSection />
-        <LeadershipSection />
-        <EducationSection />
-        <ContactSection />
-        <Footer />
+      <StructuredData data={getHomeStructuredData()} />
+      <LegacyHashRedirect />
+      <Navigation />
+      <main className="site-main site-main--home">
+        <PageTransition>
+          <HomeMobileCarousel />
+
+          <div id="home-vertical-fallback" className="home-vertical-fallback">
+            <MobileOverviewLink
+              href="/"
+              label="Back to panels"
+              className="px-layout-6 pt-layout-4"
+            />
+            <PageStagger>
+              <HomeHeroSection />
+              <HomePhilosophySection />
+              <HomeWorkTeaserSection />
+              <HomeExperiencePreviewSection />
+              <HomeWritingTeaserSection />
+              <HomeContactQuietSection />
+            </PageStagger>
+          </div>
+
+          <div className="hidden md:block">
+            <PageStagger>
+              <HomeHeroSection />
+              <HomePhilosophySection />
+              <HomeWorkTeaserSection />
+              <HomeExperiencePreviewSection />
+              <HomeWritingTeaserSection />
+              <HomeContactQuietSection />
+            </PageStagger>
+          </div>
+        </PageTransition>
       </main>
+      <MobileScrollToTop />
+      <Footer />
     </>
   );
 }

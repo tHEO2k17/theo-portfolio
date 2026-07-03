@@ -1,3 +1,7 @@
+import type { ArticleDiagramVariant } from "@/lib/media";
+import type { ArticleCoverVariant } from "@/lib/media";
+import type { ArticleNoteType } from "@/lib/writing/article-types";
+
 export type ArticleContentBlock =
   | {
       type: "heading";
@@ -21,6 +25,14 @@ export type ArticleContentBlock =
       label?: string;
       language?: string;
       code: string;
+    }
+  | {
+      type: "diagram";
+      variant: ArticleDiagramVariant;
+      label?: string;
+      nodes: string[];
+      /** Optional Mermaid source override */
+      mermaid?: string;
     };
 
 export type ArticleReadMoreLink = {
@@ -32,6 +44,8 @@ export type ArticleSection = {
   id: string;
   heading: string;
   paragraphs: string[];
+  /** Narrative after diagrams/code in example sections */
+  closingParagraphs?: string[];
   bullets?: string[];
   callout?: string;
   blocks?: ArticleContentBlock[];
@@ -47,10 +61,11 @@ export type Article = {
   author: string;
   authorRole: string;
   category: string;
+  noteType?: ArticleNoteType;
+  coverVariant?: ArticleCoverVariant;
+  coverImage?: string;
   tags: string[];
   featured?: boolean;
-  coverImage?: string;
-  coverAlt?: string;
   readMore?: ArticleReadMoreLink[];
   sections: ArticleSection[];
 };

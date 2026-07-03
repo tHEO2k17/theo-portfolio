@@ -1,87 +1,131 @@
-import Link from "next/link";
 import type { ReactNode } from "react";
 import type { Article, TableOfContentsItem } from "@/types/article";
-import { ArticleShare } from "@/components/article-share";
+import { formatArticleDate } from "@/lib/articles";
+import { getArticleNoteType } from "@/lib/writing";
+import { ArticleCover } from "@/components/media/article-cover";
+import { EditorialDisclosure, EditorialLink } from "@/components/editorial";
+import { ArticleListen } from "@/components/writing/article-listen";
+import { PageStagger } from "@/components/motion";
+import { typography } from "@/lib/typography";
+import { cn } from "@/lib/utils";
 
 type ArticleLayoutProps = {
   article: Article;
-  canonicalUrl: string;
-  tableOfContents: TableOfContentsItem[];
   readingTime: string;
+  plainText: string;
+  tableOfContents: TableOfContentsItem[];
+  showTableOfContents?: boolean;
+  footer?: ReactNode;
   children: ReactNode;
 };
 
+function ArticleContents({
+  tableOfContents,
+}: {
+  tableOfContents: TableOfContentsItem[];
+}) {
+  const list = (
+    <ol
+      className={cn(typography.bodySm, "space-y-layout-2 text-text-secondary")}
+    >
+      {tableOfContents.map((item) => (
+        <li key={item.id}>
+          <a href={`#${item.id}`} className="motion-link hover:text-accent-warm">
+            {item.title}
+          </a>
+        </li>
+      ))}
+    </ol>
+  );
+
+  return (
+    <>
+      <details className="article-contents article-contents--mobile md:hidden">
+        <summary className={cn(typography.link, "motion-link cursor-pointer")}>
+          Contents
+        </summary>
+        <div className="article-contents__body">{list}</div>
+      </details>
+
+      <EditorialDisclosure
+        label="Contents"
+        className="article-contents-disclosure mb-layout-8 hidden md:block"
+      >
+        {list}
+      </EditorialDisclosure>
+    </>
+  );
+}
+
 export function ArticleLayout({
   article,
-  canonicalUrl,
-  tableOfContents,
   readingTime,
+  plainText,
+  tableOfContents,
+  showTableOfContents = true,
+  footer,
   children,
 }: ArticleLayoutProps) {
+  const noteType = getArticleNoteType(article);
+
   return (
-    <main className="section-py">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="mb-6 flex items-center justify-between gap-4">
-          <Link
-            href="/articles"
-            className="inline-flex items-center gap-2 text-sm font-medium text-text-secondary transition-colors hover:text-accent-warm"
-          >
-            <span aria-hidden="true">←</span>
-            Back to articles
-          </Link>
-          <span className="text-xs uppercase tracking-[0.2em] text-text-tertiary">
-            Engineering Articles
-          </span>
-        </div>
-
-        <header className="space-y-3 border-b border-border/40 pb-6">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent-warm">
-            {article.category}
-          </p>
-          <h1 className="text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-[2.35rem] md:leading-tight">
-            {article.title}
-          </h1>
-          <p className="text-base leading-7 text-text-secondary md:leading-8">
-            {article.subtitle}
-          </p>
-          <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-text-secondary">
-            <span>{article.author}</span>
-            <span className="hidden h-1 w-1 rounded-full bg-border sm:inline-flex" />
-            <span>{article.authorRole}</span>
-            <span className="hidden h-1 w-1 rounded-full bg-border sm:inline-flex" />
-            <span>{readingTime}</span>
+    <div className="section-block article-reading-surface">
+      <div className="layout-container article-reading-shell">
+        <div className="article-reading-column mx-auto w-full">
+          <PageStagger>
+            <div className="article-reading-chrome">
+            <EditorialLink href="/articles" className="article-reading-chrome__back">
+              Writing
+            </EditorialLink>
+            <div className="article-reading-chrome__meta">
+              <ArticleListen plainText={plainText} />
+              <span className={cn(typography.caption, "text-text-tertiary")}>
+                {readingTime}
+              </span>
+            </div>
           </div>
-        </header>
 
-        {tableOfContents.length > 1 ? (
-          <nav
-            aria-label="Table of contents"
-            className="border-b border-border/30 py-5"
-          >
-            <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-text-tertiary">
-              Table of contents
-            </h2>
-            <ol className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm text-text-secondary">
-              {tableOfContents.map((item) => (
-                <li key={item.id}>
-                  <a
-                    href={`#${item.id}`}
-                    className="transition-colors hover:text-accent-warm"
-                  >
-                    {item.title}
-                  </a>
-                </li>
-              ))}
-            </ol>
-          </nav>
-        ) : null}
+          <header className="article-magazine-header">
+            {article.coverVariant ? (
+              <ArticleCover
+                variant={article.coverVariant}
+                alt={article.title}
+                className="article-magazine-header__cover mb-layout-8"
+              />
+            ) : null}
+            <p className={cn(typography.label, "text-text-tertiary mb-layout-4")}>
+              {noteType}
+            </p>
+            <h1 className="article-magazine-header__title text-balance text-foreground mb-layout-4">
+              {article.title}
+            </h1>
+            <p
+              className={cn(
+                typography.bodyLg,
+                "article-magazine-header__subtitle text-text-secondary mb-layout-6",
+              )}
+            >
+              {article.subtitle}
+            </p>
+            <p className={cn(typography.bodySm, "text-text-tertiary")}>
+              <time dateTime={article.publishedAt}>
+                {formatArticleDate(article.publishedAt)}
+              </time>
+            </p>
+          </header>
 
-        <article className="mx-auto max-w-6xl pt-7 text-[15px] leading-8 text-text-secondary sm:text-base md:leading-8">
-          {children}
+          {showTableOfContents && tableOfContents.length > 1 ? (
+            <ArticleContents tableOfContents={tableOfContents} />
+          ) : null}
 
-          <ArticleShare title={article.title} url={canonicalUrl} />
-        </article>
+          <article className={cn(typography.prose, "article-prose text-text-secondary")}>
+            {children}
+          </article>
+
+          {footer}
+          </PageStagger>
+        </div>
       </div>
-    </main>
+    </div>
   );
 }

@@ -1,4 +1,5 @@
 import { articles } from "@/content/articles";
+import { truncateWords } from "@/lib/text";
 import type {
   Article,
   ArticleContentBlock,
@@ -30,14 +31,23 @@ function blockWordCount(block: ArticleContentBlock) {
     return countWords(block.text);
   }
 
+  if (block.type === "diagram") {
+    return block.nodes.reduce((total, node) => total + countWords(node), 0);
+  }
+
   return 0;
 }
 
 function sectionWordCount(section: ArticleSection) {
-  const paragraphWords = section.paragraphs.reduce(
+  const paragraphWords = (section.paragraphs ?? []).reduce(
     (total, paragraph) => total + countWords(paragraph),
     0,
   );
+  const closingWords =
+    section.closingParagraphs?.reduce(
+      (total, paragraph) => total + countWords(paragraph),
+      0,
+    ) ?? 0;
   const bulletWords =
     section.bullets?.reduce((total, bullet) => total + countWords(bullet), 0) ??
     0;
@@ -51,6 +61,7 @@ function sectionWordCount(section: ArticleSection) {
   return (
     countWords(section.heading) +
     paragraphWords +
+    closingWords +
     bulletWords +
     calloutWords +
     blockWords
@@ -75,6 +86,23 @@ export function getArticleSlugs() {
 
 export function getFeaturedArticle() {
   return getArticles().find((article) => article.featured) ?? getArticles()[0];
+}
+
+export function getHomepageWritingTeaser() {
+  const sorted = getArticles();
+  const articles = sorted.slice(0, 3);
+
+  return {
+    articles: articles.map(getArticleSummary),
+  };
+}
+
+export function getDisplayExcerpt(excerpt: string, maxWords = 25) {
+  return truncateWords(excerpt, maxWords);
+}
+
+export function getArticleDisplayExcerpt(article: Article, maxWords = 25) {
+  return truncateWords(article.excerpt, maxWords);
 }
 
 export function getAllArticleTags() {
@@ -122,6 +150,20 @@ export function getRelatedArticles(currentSlug: string, limit = 3) {
     .slice(0, limit);
 }
 
+export function getAdjacentArticles(slug: string) {
+  const sorted = getArticleSummaries();
+  const index = sorted.findIndex((article) => article.slug === slug);
+
+  if (index === -1) {
+    return { previous: null, next: null };
+  }
+
+  return {
+    previous: index < sorted.length - 1 ? sorted[index + 1] : null,
+    next: index > 0 ? sorted[index - 1] : null,
+  };
+}
+
 export function getTableOfContents(article: Article): TableOfContentsItem[] {
   return article.sections.map((section) => ({
     id: section.id,
@@ -135,4 +177,51 @@ export function formatArticleDate(date: string) {
     day: "numeric",
     year: "numeric",
   }).format(new Date(date));
+}
+
+function blockPlainText(block: ArticleContentBlock) {
+  if (block.type === "code") {
+    return block.label ?? "";
+  }
+
+  if (block.type === "list") {
+    return block.items.join(". ");
+  }
+
+  if (block.type === "diagram") {
+    return block.label ?? "";
+  }
+
+  if (
+    block.type === "heading" ||
+    block.type === "paragraph" ||
+    block.type === "callout"
+  ) {
+    return block.text;
+  }
+
+  return "";
+}
+
+function sectionPlainText(section: ArticleSection) {
+  const parts = [
+    section.heading,
+    ...section.paragraphs ?? [],
+    ...(section.closingParagraphs ?? []),
+    ...(section.bullets ?? []),
+    section.callout,
+    ...(section.blocks?.map(blockPlainText) ?? []),
+  ].filter(Boolean);
+
+  return parts.join("\n\n");
+}
+
+export function getArticlePlainText(article: Article) {
+  const parts = [
+    article.title,
+    article.subtitle,
+    ...article.sections.map(sectionPlainText),
+  ].filter(Boolean);
+
+  return parts.join("\n\n");
 }
