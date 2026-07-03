@@ -1,3 +1,6 @@
+import { typography } from "@/lib/typography";
+import { cn } from "@/lib/utils";
+
 type ArticleShareProps = {
   title: string;
   url: string;
@@ -7,39 +10,44 @@ export function ArticleShare({ title, url }: ArticleShareProps) {
   const encodedTitle = encodeURIComponent(title);
   const encodedUrl = encodeURIComponent(url);
 
+  const shareClass = cn(
+    typography.link,
+    "motion-link editorial-chip text-text-secondary hover:text-accent-warm",
+  );
+
   return (
     <section
       aria-labelledby="share-article"
-      className="border-t border-border/30 pt-6"
+      className="page-entry pt-layout-8"
     >
       <h2
         id="share-article"
-        className="text-xs font-semibold uppercase tracking-[0.2em] text-text-tertiary"
+        className={cn(typography.label, "text-text-tertiary mb-layout-4")}
       >
-        Share this article
+        Share
       </h2>
-      <div className="mt-4 flex flex-wrap gap-2 sm:gap-3">
+      <div className="flex flex-wrap gap-2">
         <a
           href={`https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center rounded-full border border-border/40 px-3 py-2 text-sm font-medium text-text-secondary transition-colors hover:border-accent-bronze/50 hover:text-accent-warm"
+          className={shareClass}
         >
-          Share on X
+          X
         </a>
         <a
           href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center rounded-full border border-border/40 px-3 py-2 text-sm font-medium text-text-secondary transition-colors hover:border-accent-bronze/50 hover:text-accent-warm"
+          className={shareClass}
         >
-          Share on LinkedIn
+          LinkedIn
         </a>
         <a
           href={`mailto:?subject=${encodedTitle}&body=${encodedUrl}`}
-          className="inline-flex items-center rounded-full border border-border/40 px-3 py-2 text-sm font-medium text-text-secondary transition-colors hover:border-accent-bronze/50 hover:text-accent-warm"
+          className={shareClass}
         >
-          Share by email
+          Email
         </a>
       </div>
     </section>

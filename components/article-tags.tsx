@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { typography } from "@/lib/typography";
+import { cn } from "@/lib/utils";
 
 type ArticleTagsProps = {
   tags: string[];
@@ -18,25 +20,29 @@ export function ArticleTags({
   const visibleTags = tags.slice(0, limit);
   const remainingCount = Math.max(0, tags.length - visibleTags.length);
 
+  const chipClass = cn(
+    typography.caption,
+    "editorial-chip",
+  );
+
   if (hrefBase) {
     return (
       <ul
-        className={`flex flex-wrap gap-1.5 mb-5 ${centered ? "justify-center" : ""} ${className ?? ""}`}
+        className={cn(
+          "mb-layout-4 flex flex-wrap gap-2",
+          centered && "justify-center",
+          className,
+        )}
       >
         {visibleTags.map((tag) => (
           <li key={tag}>
-            <Link
-              href={`${hrefBase}?tag=${encodeURIComponent(tag)}`}
-              className="inline-flex items-center rounded-full border border-border/40 bg-bg-secondary/40 px-2.5 py-1 text-[11px] font-medium text-text-tertiary transition-colors hover:border-accent-bronze/50 hover:text-accent-warm"
-            >
+            <Link href={`${hrefBase}?tag=${encodeURIComponent(tag)}`} className={chipClass}>
               {tag}
             </Link>
           </li>
         ))}
         {remainingCount > 0 ? (
-          <li className="inline-flex items-center rounded-full border border-border/40 bg-bg-secondary/40 px-2.5 py-1 text-[11px] font-medium text-text-tertiary">
-            +{remainingCount}
-          </li>
+          <li className={cn(chipClass, "text-text-tertiary")}>+{remainingCount}</li>
         ) : null}
       </ul>
     );
@@ -44,20 +50,19 @@ export function ArticleTags({
 
   return (
     <ul
-      className={`flex flex-wrap gap-1.5 mb-5 ${centered ? "justify-center" : ""} ${className ?? ""}`}
+      className={cn(
+        "mb-layout-4 flex flex-wrap gap-2",
+        centered && "justify-center",
+        className,
+      )}
     >
       {visibleTags.map((tag) => (
-        <li
-          key={tag}
-          className="inline-flex items-center rounded-full border border-border/40 bg-bg-secondary/40 px-2.5 py-1 text-[11px] font-medium text-text-tertiary"
-        >
+        <li key={tag} className={cn(chipClass, "text-text-tertiary")}>
           {tag}
         </li>
       ))}
       {remainingCount > 0 ? (
-        <li className="inline-flex items-center rounded-full border border-border/40 bg-bg-secondary/40 px-2.5 py-1 text-[11px] font-medium text-text-tertiary">
-          +{remainingCount}
-        </li>
+        <li className={cn(chipClass, "text-text-tertiary")}>+{remainingCount}</li>
       ) : null}
     </ul>
   );

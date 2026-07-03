@@ -1,16 +1,26 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import { ArticleLayout } from "@/components/article-layout";
-import { ArticleMeta } from "@/components/article-meta";
-import { ArticleTags } from "@/components/article-tags";
+import { SitePageShell } from "@/components/site-page-shell";
+import { StructuredData } from "@/components/structured-data";
 import {
+  ArticleAdjacentNav,
+} from "@/components/writing";
+import {
+  getAdjacentArticles,
   getArticleBySlug,
+  getArticlePlainText,
   getArticleSlugs,
   getArticleWordCount,
   getTableOfContents,
   getReadingTime,
 } from "@/lib/articles";
+import { getArticleStructuredData } from "@/lib/structured-data";
+import { DEFAULT_OG_IMAGE, getPageSocialMetadata } from "@/lib/seo";
+import { SITE_URL } from "@/lib/site";
+import { typography } from "@/lib/typography";
+import { cn } from "@/lib/utils";
+import { ArticleDiagram } from "@/components/writing/article-diagram";
 import type { ArticleContentBlock } from "@/types/article";
 
 type ArticlePageProps = {
@@ -35,25 +45,21 @@ export async function generateMetadata({
     return {};
   }
 
-  const url = `https://theopaintsil.online/articles/${article.slug}`;
+  const url = `${SITE_URL}/articles/${article.slug}`;
 
   const ogImages = article.coverImage
     ? [
         {
-          url: `https://theopaintsil.online${article.coverImage}`,
-          width: 1200,
-          height: 630,
-          alt: article.coverAlt ?? article.title,
-        },
-      ]
-    : [
-        {
-          url: "/og-image.png",
+          url: article.coverImage,
           width: 1200,
           height: 630,
           alt: article.title,
         },
-      ];
+      ]
+    : DEFAULT_OG_IMAGE.map((image) => ({
+        ...image,
+        alt: article.title,
+      }));
 
   return {
     title: article.title,
@@ -61,30 +67,23 @@ export async function generateMetadata({
     alternates: {
       canonical: url,
     },
-    openGraph: {
+    ...getPageSocialMetadata({
       title: article.title,
       description: article.excerpt,
-      url,
-      siteName: "Theophilus Paintsil",
+      path: `/articles/${article.slug}`,
       type: "article",
+      images: ogImages,
       publishedTime: article.publishedAt,
       modifiedTime: article.updatedAt ?? article.publishedAt,
       authors: [article.author],
-      images: ogImages,
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: article.title,
-      description: article.excerpt,
-      images: ogImages.map((i) => i.url),
-    },
+    }),
   };
 }
 
 function renderContentBlock(block: ArticleContentBlock) {
   if (block.type === "heading") {
     return (
-      <h3 className="text-base font-semibold text-foreground md:text-lg">
+      <h3 className={cn(typography.h4, "article-block__title text-foreground")}>
         {block.text}
       </h3>
     );
@@ -92,18 +91,21 @@ function renderContentBlock(block: ArticleContentBlock) {
 
   if (block.type === "paragraph") {
     return (
-      <p className="leading-7 text-text-secondary md:leading-8">{block.text}</p>
+      <p className={cn(typography.body, "text-text-secondary")}>{block.text}</p>
     );
   }
 
   if (block.type === "list") {
-    const listClassName = "space-y-2 pl-5 text-text-secondary";
+    const listClassName = cn(
+      typography.body,
+      "space-y-layout-2 pl-5 text-text-secondary",
+    );
 
     if (block.style === "numbered") {
       return (
         <ol className={listClassName}>
           {block.items.map((item) => (
-            <li key={item} className="list-decimal leading-7">
+            <li key={item} className="list-decimal">
               {item}
             </li>
           ))}
@@ -114,7 +116,7 @@ function renderContentBlock(block: ArticleContentBlock) {
     return (
       <ul className={listClassName}>
         {block.items.map((item) => (
-          <li key={item} className="list-disc leading-7">
+          <li key={item} className="list-disc">
             {item}
           </li>
         ))}
@@ -124,24 +126,39 @@ function renderContentBlock(block: ArticleContentBlock) {
 
   if (block.type === "callout") {
     return (
-      <div className="border-l-2 border-accent-bronze/40 pl-4 text-text-secondary">
+      <blockquote className="article-pull-quote article-pull-quote--inline">
         {block.text}
+      </blockquote>
+    );
+  }
+
+  if (block.type === "diagram") {
+    return (
+      <div className="article-figure">
+        <ArticleDiagram
+          variant={block.variant}
+          nodes={block.nodes}
+          label={block.label}
+          mermaid={block.mermaid}
+        />
       </div>
     );
   }
 
-  return (
-    <div>
-      {block.label ? (
-        <p className="mb-2 text-xs font-medium uppercase tracking-[0.16em] text-text-tertiary">
-          {block.label}
-        </p>
-      ) : null}
-      <pre className="my-5 overflow-x-auto rounded-lg border border-white/10 bg-black/40 p-4 text-sm leading-relaxed text-zinc-100">
-        <code className="font-mono">{block.code}</code>
-      </pre>
-    </div>
-  );
+  if (block.type === "code") {
+    return (
+      <figure className="article-figure article-code">
+        {block.label ? (
+          <figcaption className="article-figure__label">{block.label}</figcaption>
+        ) : null}
+        <pre className="article-code__pre overflow-x-auto">
+          <code className="article-code__body font-mono">{block.code}</code>
+        </pre>
+      </figure>
+    );
+  }
+
+  return null;
 }
 
 export default async function ArticlePage({ params }: ArticlePageProps) {
@@ -152,139 +169,123 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     notFound();
   }
 
-  const canonicalUrl = `https://theopaintsil.online/articles/${article.slug}`;
   const tableOfContents = getTableOfContents(article);
   const readingTime = getReadingTime(article);
-  const structuredData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      headline: article.title,
-      description: article.excerpt,
-      author: {
-        "@type": "Person",
-        name: article.author,
-        jobTitle: article.authorRole,
-        url: "https://theopaintsil.online",
-      },
-      datePublished: article.publishedAt,
-      dateModified: article.updatedAt ?? article.publishedAt,
-      mainEntityOfPage: canonicalUrl,
-      url: canonicalUrl,
-      image: article.coverImage
-        ? `https://theopaintsil.online${article.coverImage}`
-        : "https://theopaintsil.online/og-image.png",
-      keywords: article.tags,
-      wordCount: getArticleWordCount(article),
-      publisher: {
-        "@type": "Person",
-        name: "Theophilus Paintsil",
-        url: "https://theopaintsil.online",
-      },
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      name: article.author,
-      jobTitle: article.authorRole,
-      url: "https://theopaintsil.online",
-    },
-  ];
+  const plainText = getArticlePlainText(article);
+  const { previous, next } = getAdjacentArticles(slug);
+  const wordCount = getArticleWordCount(article);
+  const structuredData = getArticleStructuredData({
+    title: article.title,
+    description: article.excerpt,
+    slug: article.slug,
+    author: article.author,
+    authorRole: article.authorRole,
+    publishedAt: article.publishedAt,
+    updatedAt: article.updatedAt,
+    tags: article.tags,
+    wordCount,
+    coverImage: article.coverImage,
+  });
+
+  const showTableOfContents = wordCount >= 550;
 
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
+    <SitePageShell>
+      <StructuredData data={structuredData} />
       <ArticleLayout
         article={article}
-        canonicalUrl={canonicalUrl}
+        plainText={plainText}
         tableOfContents={tableOfContents}
         readingTime={readingTime}
+        showTableOfContents={showTableOfContents}
+        footer={<ArticleAdjacentNav previous={previous} next={next} />}
       >
-        <div className="space-y-4">
-          <ArticleMeta
-            author={article.author}
-            authorRole={article.authorRole}
-            publishedAt={article.publishedAt}
-            updatedAt={article.updatedAt}
-            readingTime={readingTime}
-          />
-          <p className="text-text-secondary">{article.excerpt}</p>
-          <ArticleTags tags={article.tags} />
-        </div>
-
-        {article.coverImage ? (
-          <div className="w-full overflow-hidden rounded-lg">
-            <div className="relative w-full aspect-[21/9] bg-border/10">
-              <Image
-                src={article.coverImage}
-                alt={article.coverAlt ?? article.title}
-                fill
-                className="object-cover"
-                sizes="(max-width: 640px) 100vw, 1000px"
-              />
-            </div>
-          </div>
-        ) : null}
-
-        {article.sections.map((section) => (
+        {article.sections.map((section, index) => (
           <section
             key={section.id}
             id={section.id}
-            className="scroll-mt-28 space-y-3 mt-5"
+            className="article-section scroll-mt-nav"
           >
-            <h2 className="text-xl font-semibold tracking-tight text-foreground md:text-2xl">
-              {section.heading}
-            </h2>
-            {section.paragraphs.map((paragraph) => (
-              <p
-                key={paragraph}
-                className="leading-7 text-text-secondary md:leading-8"
-              >
-                {paragraph}
-              </p>
-            ))}
-            {section.bullets ? (
-              <ul className="space-y-2 pl-5 text-text-secondary">
-                {section.bullets.map((bullet) => (
-                  <li key={bullet} className="list-disc leading-7">
-                    {bullet}
-                  </li>
+            {index > 0 ? <hr className="article-section-rule" /> : null}
+
+            <header className="article-section__header">
+              <h2 className="article-section__title">{section.heading}</h2>
+            </header>
+
+            {(section.paragraphs?.length ?? 0) > 0 || section.bullets ? (
+              <div className="article-section__lead">
+                {(section.paragraphs ?? []).map((paragraph) => (
+                  <p
+                    key={paragraph}
+                    className={cn(typography.body, "text-text-secondary")}
+                  >
+                    {paragraph}
+                  </p>
                 ))}
-              </ul>
-            ) : null}
-            {section.callout ? (
-              <div className="border-l-2 border-accent-bronze/40 pl-4 text-text-secondary">
-                {section.callout}
+                {section.bullets ? (
+                  <ul
+                    className={cn(
+                      typography.body,
+                      "space-y-layout-2 pl-5 text-text-secondary",
+                    )}
+                  >
+                    {section.bullets.map((bullet) => (
+                      <li key={bullet} className="list-disc">
+                        {bullet}
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
               </div>
             ) : null}
-            {section.blocks?.map((block, index) => (
-              <div key={`${section.id}-block-${index}`}>
-                {renderContentBlock(block)}
+
+            {section.blocks?.length ? (
+              <div className="article-section__examples">
+                {section.blocks.map((block, blockIndex) => (
+                  <div key={`${section.id}-block-${blockIndex}`}>
+                    {renderContentBlock(block)}
+                  </div>
+                ))}
               </div>
-            ))}
+            ) : null}
+
+            {section.closingParagraphs?.length || section.callout ? (
+              <div className="article-section__takeaway">
+                {section.closingParagraphs?.map((paragraph) => (
+                  <p
+                    key={paragraph}
+                    className={cn(typography.bodyLg, "text-foreground/90")}
+                  >
+                    {paragraph}
+                  </p>
+                ))}
+                {section.callout ? (
+                  <blockquote className="article-pull-quote">
+                    {section.callout}
+                  </blockquote>
+                ) : null}
+              </div>
+            ) : null}
           </section>
         ))}
 
         {article.readMore?.length ? (
-          <section className="mt-10 border-t border-border/30 pt-8">
-            <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-text-tertiary">
-              Read more
+          <section className="mt-layout-12">
+            <hr className="article-section-rule" />
+            <h2 className={cn(typography.label, "text-text-tertiary mb-layout-4")}>
+              References
             </h2>
-            <p className="mt-3 max-w-2xl text-sm leading-7 text-text-secondary md:text-base md:leading-8">
-              Use these references to go deeper on the framework or pattern
-              discussed above.
-            </p>
-            <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+            <ul className="space-y-layout-3">
               {article.readMore.map((link) => (
                 <li key={link.url}>
                   <a
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block rounded-lg border border-border/40 bg-bg-secondary/35 px-4 py-3 text-sm font-medium text-text-secondary transition-colors hover:border-accent-bronze/50 hover:text-accent-warm"
+                    className={cn(
+                      typography.link,
+                      "motion-link text-text-secondary hover:text-accent-warm",
+                    )}
                   >
                     {link.label}
                   </a>
@@ -294,6 +295,6 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           </section>
         ) : null}
       </ArticleLayout>
-    </>
+    </SitePageShell>
   );
 }
