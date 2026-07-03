@@ -195,3 +195,10 @@ export function useMobileScrollChromeEnabled() {
 
   return isMobile && !isBrowseOnly;
 }
+
+export function useScrollToTopEnabled() {
+  const isMobile = useIsMobileViewport();
+  const chromeEnabled = useMobileScrollChromeEnabled();
+
+  return isMobile ? chromeEnabled : true;
+}

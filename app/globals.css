@@ -2207,7 +2207,8 @@
     }
 
     .mobile-scroll-control--up {
-      display: none;
+      bottom: var(--spacing-layout-6);
+      right: max(var(--layout-gutter), env(safe-area-inset-right, 0px));
     }
   }
 

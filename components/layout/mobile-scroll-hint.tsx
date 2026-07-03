@@ -8,6 +8,7 @@ import {
   useCoverScrollHint,
   useMobileScrollChromeEnabled,
   useScrollToTop,
+  useScrollToTopEnabled,
 } from "@/hooks/use-scroll-hint";
 
 type MobileCoverScrollHintProps = {
@@ -40,17 +41,17 @@ export function MobileCoverScrollHint({
   );
 }
 
-/** Scroll-to-top control for mobile reading pages after the user scrolls down. */
+/** Scroll-to-top control after the user scrolls down. */
 export function MobileScrollToTop() {
-  const chromeEnabled = useMobileScrollChromeEnabled();
-  const visible = useScrollToTop(chromeEnabled);
+  const enabled = useScrollToTopEnabled();
+  const visible = useScrollToTop(enabled);
 
   if (!visible) return null;
 
   return (
     <button
       type="button"
-      className="mobile-scroll-control mobile-scroll-control--up md:hidden"
+      className="mobile-scroll-control mobile-scroll-control--up"
       aria-label="Scroll to top"
       onClick={() => scrollElementToTop(document.documentElement)}
     >
