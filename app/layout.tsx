@@ -2,6 +2,11 @@ import { Analytics } from '@vercel/analytics/next';
 import type { Metadata, Viewport } from 'next';
 import { Geist_Mono, Montserrat } from 'next/font/google';
 import { Toaster } from 'sonner';
+import {
+  getPageSocialMetadata,
+  HOME_DESCRIPTION,
+} from '@/lib/seo';
+import { SITE_NAME, SITE_URL } from '@/lib/site';
 import './globals.css';
 
 const montserrat = Montserrat({
@@ -14,14 +19,16 @@ const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
 });
 
+const defaultTitle =
+  'Theophilus Paintsil | Senior Software Engineer & Technical Lead';
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://theopaintsil.online'),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Theophilus Paintsil | Senior Software Engineer & Technical Lead',
-    template: '%s | Theophilus Paintsil',
+    default: defaultTitle,
+    template: `%s | ${SITE_NAME}`,
   },
-  description:
-    'Software engineer and technical lead based in Accra, working with teams across Ghana, Europe, and distributed environments. Web, mobile, backend, and cloud.',
+  description: HOME_DESCRIPTION,
   generator: 'tp',
   applicationName: 'Theophilus Paintsil Portfolio',
   referrer: 'origin-when-cross-origin',
@@ -49,37 +56,18 @@ export const metadata: Metadata = {
   creator: 'Theophilus Paintsil',
   publisher: 'Theophilus Paintsil',
   alternates: {
-    canonical: 'https://theopaintsil.online',
+    canonical: SITE_URL,
   },
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  openGraph: {
-    title: 'Theophilus Paintsil | Senior Software Engineer & Technical Lead',
-    description:
-      'Software engineer and technical lead building products across web, mobile, backend, and cloud infrastructure.',
-    url: 'https://theopaintsil.online',
-    siteName: 'Theophilus Paintsil',
-    locale: 'en_US',
-    type: 'website',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Theophilus Paintsil portfolio preview',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Theophilus Paintsil | Senior Software Engineer & Technical Lead',
-    description:
-      'Software engineer and technical lead building products across web, mobile, backend, and cloud infrastructure.',
-    images: ['/og-image.png'],
-  },
+  ...getPageSocialMetadata({
+    title: defaultTitle,
+    description: HOME_DESCRIPTION,
+    path: '/',
+  }),
   robots: {
     index: true,
     follow: true,

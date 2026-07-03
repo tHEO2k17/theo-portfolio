@@ -16,6 +16,7 @@ import {
   getReadingTime,
 } from "@/lib/articles";
 import { getArticleStructuredData } from "@/lib/structured-data";
+import { DEFAULT_OG_IMAGE, getPageSocialMetadata } from "@/lib/seo";
 import { SITE_URL } from "@/lib/site";
 import { typography } from "@/lib/typography";
 import { cn } from "@/lib/utils";
@@ -55,14 +56,10 @@ export async function generateMetadata({
           alt: article.title,
         },
       ]
-    : [
-        {
-          url: "/og-image.png",
-          width: 1200,
-          height: 630,
-          alt: article.title,
-        },
-      ];
+    : DEFAULT_OG_IMAGE.map((image) => ({
+        ...image,
+        alt: article.title,
+      }));
 
   return {
     title: article.title,
@@ -70,23 +67,16 @@ export async function generateMetadata({
     alternates: {
       canonical: url,
     },
-    openGraph: {
+    ...getPageSocialMetadata({
       title: article.title,
       description: article.excerpt,
-      url,
-      siteName: "Theophilus Paintsil",
+      path: `/articles/${article.slug}`,
       type: "article",
+      images: ogImages,
       publishedTime: article.publishedAt,
       modifiedTime: article.updatedAt ?? article.publishedAt,
       authors: [article.author],
-      images: ogImages,
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: article.title,
-      description: article.excerpt,
-      images: ogImages.map((i) => i.url),
-    },
+    }),
   };
 }
 

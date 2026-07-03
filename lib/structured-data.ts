@@ -1,3 +1,4 @@
+import { OG_IMAGE_PATH } from "./seo";
 import {
   PERSON_DESCRIPTION,
   PERSON_ID,
@@ -34,7 +35,7 @@ export function getPersonSchema() {
     name: SITE_NAME,
     jobTitle: "Senior Software Engineer / Technical Lead",
     url: SITE_URL,
-    image: `${SITE_URL}/og-image.png`,
+    image: `${SITE_URL}${OG_IMAGE_PATH}`,
     sameAs: [...PERSON_SAME_AS],
     description: PERSON_DESCRIPTION,
   };
@@ -124,7 +125,9 @@ export function getArticleStructuredData({
   coverImage,
 }: ArticleSchemaInput) {
   const url = absoluteUrl(`/articles/${slug}`);
-  const image = coverImage ? absoluteUrl(coverImage) : `${SITE_URL}/og-image.png`;
+  const image = coverImage
+    ? absoluteUrl(coverImage)
+    : `${SITE_URL}${OG_IMAGE_PATH}`;
 
   return [
     {
