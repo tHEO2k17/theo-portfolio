@@ -7,6 +7,7 @@ import {
   HOME_DESCRIPTION,
 } from '@/lib/seo';
 import { SITE_NAME, SITE_URL } from '@/lib/site';
+import { ScrollToTop } from '@/components/scroll-to-top';
 import './globals.css';
 
 const montserrat = Montserrat({
@@ -105,6 +106,7 @@ export default function RootLayout({
         className="font-sans antialiased bg-background text-foreground"
         suppressHydrationWarning
       >
+        <ScrollToTop />
         {children}
         {process.env.NODE_ENV === 'production' ? <Analytics /> : null}
         <Toaster toastOptions={{ style: { borderRadius: 0 } }} />

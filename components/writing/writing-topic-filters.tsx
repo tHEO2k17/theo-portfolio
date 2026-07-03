@@ -89,9 +89,12 @@ export function WritingTopicFilters({
       "(prefers-reduced-motion: reduce)",
     ).matches;
 
-    active.scrollIntoView({
-      inline: "center",
-      block: "nearest",
+    const targetLeft =
+      active.offsetLeft - (scroller.clientWidth - active.offsetWidth) / 2;
+    const maxLeft = scroller.scrollWidth - scroller.clientWidth;
+
+    scroller.scrollTo({
+      left: Math.max(0, Math.min(targetLeft, maxLeft)),
       behavior: prefersReducedMotion ? "auto" : "smooth",
     });
 

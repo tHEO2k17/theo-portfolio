@@ -34,6 +34,10 @@ export const articleTtsPlan = {
       playing: "Reading aloud",
       paused: "Reading paused",
     },
+    statusTextShort: {
+      playing: "Playing",
+      paused: "Paused",
+    },
     ariaStatusRegion: true,
   },
   voice: {

@@ -91,6 +91,13 @@ export function CalendlyInline({ className }: CalendlyInlineProps) {
           resize: true,
         });
         setIsReady(true);
+
+        // Calendly can nudge the page scroll when the iframe first paints.
+        requestAnimationFrame(() => {
+          if (window.scrollY > 0 && window.scrollY < window.innerHeight * 0.35) {
+            window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+          }
+        });
       })
       .catch(() => {
         if (!cancelled) setLoadFailed(true);

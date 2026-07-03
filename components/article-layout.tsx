@@ -77,12 +77,18 @@ export function ArticleLayout({
             <EditorialLink href="/articles" className="article-reading-chrome__back">
               Writing
             </EditorialLink>
-            <div className="article-reading-chrome__meta">
-              <ArticleListen plainText={plainText} />
-              <span className={cn(typography.caption, "text-text-tertiary")}>
-                {readingTime}
-              </span>
-            </div>
+            <span
+              className={cn(
+                typography.caption,
+                "article-reading-chrome__time text-text-tertiary",
+              )}
+            >
+              {readingTime}
+            </span>
+            <ArticleListen
+              plainText={plainText}
+              className="article-reading-chrome__listen"
+            />
           </div>
 
           <header className="article-magazine-header">

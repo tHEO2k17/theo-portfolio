@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useIsMobileViewport } from "@/hooks/use-scroll-hint";
 import { articleTtsPlan } from "@/lib/writing/tts-plan";
 import { typography } from "@/lib/typography";
 import { cn } from "@/lib/utils";
@@ -27,6 +28,7 @@ function getReducedMotionPreference() {
 }
 
 export function ArticleListen({ plainText, className }: ArticleListenProps) {
+  const isMobile = useIsMobileViewport();
   const [supported, setSupported] = useState(false);
   const [reducedMotion, setReducedMotion] = useState(false);
   const [state, setState] = useState<ListenState>("idle");
@@ -155,12 +157,16 @@ export function ArticleListen({ plainText, className }: ArticleListenProps) {
 
   const statusText =
     state === "playing"
-      ? articleTtsPlan.readingState.statusText.playing
+      ? isMobile
+        ? articleTtsPlan.readingState.statusTextShort.playing
+        : articleTtsPlan.readingState.statusText.playing
       : state === "paused"
-        ? articleTtsPlan.readingState.statusText.paused
+        ? isMobile
+          ? articleTtsPlan.readingState.statusTextShort.paused
+          : articleTtsPlan.readingState.statusText.paused
         : null;
 
-  const handleClick = () => {
+  const handlePrimaryClick = () => {
     if (state === "idle") {
       play();
       return;
@@ -176,40 +182,46 @@ export function ArticleListen({ plainText, className }: ArticleListenProps) {
     }
   };
 
+  const buttonClass = cn(
+    typography.caption,
+    "article-listen__button motion-link rounded-sm text-text-tertiary hover:text-accent-warm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+  );
+
   return (
-    <div className={cn("flex items-center gap-layout-2", className)}>
-      <button
-        type="button"
-        onClick={handleClick}
-        aria-pressed={state !== "idle"}
-        className={cn(
-          typography.caption,
-          "article-listen motion-link rounded-sm px-layout-2 py-layout-1 text-text-tertiary hover:text-accent-warm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
-        )}
-      >
-        {label}
-      </button>
-      {state !== "idle" ? (
-        <>
-          <span
-            className={cn(typography.caption, "text-text-tertiary")}
-            aria-live={articleTtsPlan.accessibility.ariaLive}
-            role="status"
-          >
-            {statusText}
-          </span>
+    <div
+      className={cn("article-listen", className)}
+      data-state={state}
+    >
+      {statusText ? (
+        <span
+          className={cn(typography.bodySm, "article-listen__status text-text-tertiary")}
+          aria-live={articleTtsPlan.accessibility.ariaLive}
+          role="status"
+        >
+          {statusText}
+        </span>
+      ) : null}
+
+      <div className="article-listen__controls">
+        <button
+          type="button"
+          onClick={handlePrimaryClick}
+          aria-pressed={state !== "idle"}
+          className={cn(buttonClass, "article-listen__primary")}
+        >
+          {label}
+        </button>
+
+        {state !== "idle" ? (
           <button
             type="button"
             onClick={stop}
-            className={cn(
-              typography.caption,
-              "motion-link text-text-tertiary hover:text-accent-warm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
-            )}
+            className={cn(buttonClass, "article-listen__stop")}
           >
             {articleTtsPlan.controls.stop}
           </button>
-        </>
-      ) : null}
+        ) : null}
+      </div>
     </div>
   );
 }
