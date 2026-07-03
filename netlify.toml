@@ -2,5 +2,9 @@
   command = "npm run build"
   publish = ".next"
 
+[build.environment]
+  # NEXT_PUBLIC_* values are inlined into client bundles by design.
+  SECRETS_SCAN_OMIT_KEYS = "NEXT_PUBLIC_CALENDLY_URL,NEXT_PUBLIC_MAPBOX_TOKEN"
+
 [[plugins]]
   package = "@netlify/plugin-nextjs"
