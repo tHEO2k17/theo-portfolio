@@ -13,7 +13,6 @@ export type TopNavItem = {
 export type BottomNavItem = {
   href: string;
   label: string;
-  shortLabel: string;
   icon: NavIconId;
   ariaLabel: string;
   isActive: (pathname: string) => boolean;
@@ -32,7 +31,6 @@ export const bottomNavItems: BottomNavItem[] = [
   {
     href: "/work",
     label: "Work",
-    shortLabel: "Work",
     icon: "work",
     ariaLabel: "Work",
     isActive: (pathname) => pathname === "/work",
@@ -40,7 +38,6 @@ export const bottomNavItems: BottomNavItem[] = [
   {
     href: "/practice",
     label: "Practice",
-    shortLabel: "Practice",
     icon: "practice",
     ariaLabel: "Practice",
     isActive: (pathname) => pathname === "/practice",
@@ -48,7 +45,6 @@ export const bottomNavItems: BottomNavItem[] = [
   {
     href: "/experience",
     label: "Experience",
-    shortLabel: "Places",
     icon: "experience",
     ariaLabel: "Experience",
     isActive: (pathname) => pathname === "/experience",
@@ -56,7 +52,6 @@ export const bottomNavItems: BottomNavItem[] = [
   {
     href: "/articles",
     label: "Writing",
-    shortLabel: "Notes",
     icon: "writing",
     ariaLabel: "Writing",
     isActive: (pathname) =>
@@ -65,7 +60,6 @@ export const bottomNavItems: BottomNavItem[] = [
   {
     href: "/contact",
     label: "Contact",
-    shortLabel: "Contact",
     icon: "contact",
     ariaLabel: "Contact",
     isActive: (pathname) => pathname === "/contact",
