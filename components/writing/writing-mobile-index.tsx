@@ -10,6 +10,7 @@ import { typography } from "@/lib/typography";
 import { cn } from "@/lib/utils";
 import type { ArticleSummary } from "@/types/article";
 import { WritingTopicFilters } from "./writing-topic-filters";
+import { WritingMobileTopicsBar } from "./writing-mobile-topics-bar";
 import { formatWritingDate } from "./writing-list-shared";
 
 type WritingMobileIndexProps = {
@@ -38,24 +39,21 @@ export function WritingMobileIndex({ articles }: WritingMobileIndexProps) {
         description={writingRouteHero.description}
       />
 
-      <div className="writing-mobile-index__feed mobile-read-surface">
-        <section
-          aria-labelledby="writing-mobile-topics"
-          className="writing-mobile-index__topics"
+      <WritingMobileTopicsBar aria-labelledby="writing-mobile-topics">
+        <h2
+          id="writing-mobile-topics"
+          className={cn(typography.label, "text-text-tertiary mb-layout-4")}
         >
-          <h2
-            id="writing-mobile-topics"
-            className={cn(typography.label, "text-text-tertiary mb-layout-4")}
-          >
-            Topics
-          </h2>
-          <WritingTopicFilters
-            selectedTopic={selectedTopic}
-            onSelect={setSelectedTopic}
-            compactLabels
-          />
-        </section>
+          Topics
+        </h2>
+        <WritingTopicFilters
+          selectedTopic={selectedTopic}
+          onSelect={setSelectedTopic}
+          compactLabels
+        />
+      </WritingMobileTopicsBar>
 
+      <div className="writing-mobile-index__feed mobile-read-surface">
         {filtered.length > 0 ? (
           <ul className="writing-archive-list writing-mobile-index__list">
             {filtered.map((article) => (
