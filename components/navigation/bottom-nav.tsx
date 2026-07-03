@@ -5,6 +5,7 @@ import { createPortal } from "react-dom";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { bottomNavItems, isArticleReadingPath } from "@/lib/navigation";
+import { typography } from "@/lib/typography";
 import { cn } from "@/lib/utils";
 import { NavIcon } from "./nav-icons";
 
@@ -40,7 +41,12 @@ export function BottomNav() {
                 {isActive ? (
                   <span className="bottom-nav__indicator" aria-hidden="true" />
                 ) : null}
-                <NavIcon id={item.icon} />
+                <span className="bottom-nav__item">
+                  <NavIcon id={item.icon} />
+                  <span className={cn(typography.caption, "bottom-nav__label")}>
+                    {item.shortLabel}
+                  </span>
+                </span>
               </Link>
             </li>
           );
